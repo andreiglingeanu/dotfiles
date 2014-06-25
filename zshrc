@@ -3,7 +3,11 @@ source $ZSHA_BASE/antigen/antigen.zsh
 source ~/.zsh-antigen/zsh/config.sh
 
 antigen-use oh-my-zsh
-antigen-bundle git
+antigen-bundles <<EOBUNDLES
+  git
+  bundler
+  tmux
+EOBUNDLES
 
 antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen-bundle zsh-users/zsh-history-substring-search

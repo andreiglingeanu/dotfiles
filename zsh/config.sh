@@ -5,6 +5,8 @@ HISTSIZE=10000
 REPORTTIME=10
 LISTMAX=0
 
+ZSH_TMUX_AUTOSTART=false
+
 # My zsh theme
 # Plugins
 
