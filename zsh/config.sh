@@ -15,6 +15,8 @@ autoload -U compinit promptinit
 compinit
 promptinit;
 
+# Extended globbing
+setopt extended_glob
 
 # Rvm stuff
 [[ -s "$HOME/.rvm/scripts/rvm" ]]

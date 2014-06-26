@@ -7,6 +7,7 @@ antigen-bundles <<EOBUNDLES
   git
   bundler
   tmux
+  rvm
 EOBUNDLES
 
 antigen-bundle zsh-users/zsh-syntax-highlighting
