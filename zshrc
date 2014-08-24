@@ -1,13 +1,12 @@
-ZSHA_BASE=$HOME/.zsh-antigen
+ZSHA_BASE=$HOME/zsh-antigen
 source $ZSHA_BASE/antigen/antigen.zsh
-source ~/.zsh-antigen/zsh/config.sh
+source $ZSHA_BASE/zsh/config.sh
 
 antigen-use oh-my-zsh
 antigen-bundles <<EOBUNDLES
   git
   bundler
   tmux
-  rvm
 EOBUNDLES
 
 antigen-bundle zsh-users/zsh-syntax-highlighting
@@ -30,5 +29,5 @@ fi
 
 alias pretty='pygmentize -g -O encoding=utf-8'
 
-source ~/.zsh-antigen/zsh/aliases.sh
-source ~/.zsh-antigen/zsh/env.sh
+source $ZSHA_BASE/zsh/aliases.sh
+source $ZSHA_BASE/zsh/env.sh

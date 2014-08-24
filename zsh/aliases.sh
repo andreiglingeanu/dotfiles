@@ -1,8 +1,8 @@
 # Utility
 alias reload='source ~/.zshrc'
-alias ea='vim ~/.zsh-antigen/zsh/aliases.sh && reload' # Edit aliases
-alias ec='vim ~/.zsh-antigen/zsh/config.sh && reload' # Edit config
-alias ee='vim ~/.zsh-antigen/zshrc && reload' # Edit zshrc
+alias ea='vim ~/zsh-antigen/zsh/aliases.sh && reload' # Edit aliases
+alias ec='vim ~/zsh-antigen/zsh/config.sh && reload' # Edit config
+alias ee='vim ~/zsh-antigen/zshrc && reload' # Edit zshrc
 alias trr='trs {=ru}'
 alias k='kill -9 %${1-1}'
 alias to='touch'
@@ -14,8 +14,6 @@ alias paste='xclip -selection clipboard -o'
 
 # Common
 alias gclo='git clone'
-alias ls='ls --color=auto'
-alias la='ls --color=auto -a'
 alias c='clear'
 alias cdd='cd -' # goto last dir cd'ed from
 alias h='history'
