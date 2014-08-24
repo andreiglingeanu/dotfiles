@@ -82,6 +82,11 @@ alias tmux='tmux -2'
 # mysql
 alias mysqlroot='mysql -u root -p'
 
+function mysqldb() {
+  mysql -u root -p -e "CREATE DATABASE $1 CHARACTER SET utf8 COLLATE utf8_bin;"
+}
+
+
 # dropbox
 alias puburl='dropbox puburl'
 
@@ -117,9 +122,14 @@ alias apastop='sudo /etc/init.d/apache2 stop'
 alias apastart='sudo /etc/init.d/apache2 start'
 alias apaconf='sudo vim /etc/apache2/apache2.conf'
 alias phpconf='sudo vim /etc/php5/apache2/php.ini'
+alias apacurdir='sudo mount -o bind . /var/www/html'
+alias apacurdirstop='sudo umount /var/www/html'
 
 # GDB
 alias gdb='gdb -quiet'
+
+# Mega sync all my screencasts
+alias synccasts='megacmd sync ~/Videos/Screencasts mega:/Screencasts'
 
 # Use vim cli mode
 bindkey '^P' up-history
@@ -150,4 +160,8 @@ function mox () {
 
 function plov () {
   cd ~/Projects/mox/plov; echo 'Work Bitch!'
+}
+
+function water () {
+  ssh crwatersolutions.com@shell1c1.megawebservers.com
 }
