@@ -95,25 +95,6 @@ alias v='vim'
 alias vf='vim `fzf -m`' # https://github.com/junegunn/fzf
 alias gvim="gvim --remote-tab-silent"
 
-# rvm
-alias rl='rvm list'
-alias ru='rvm use'
-alias rg='rvm gemset'
-alias rgc='rvm gemset create'
-alias rgl='rvm gemset list'
-alias rgu='rvm gemset use'
-alias rgd='rvm gemset delete'
-
-# rvm helper
-function rvc() {
-  s=`rvm-prompt`
-  a=(${(s/@/)s})
-  echo "$fg[green]Current Ruby: $reset_color$fg[red]$a[1]$reset_color"
-  echo "$fg[green]Current Gemset: $reset_color$fg[red]$a[2]$reset_color"
-}
-
-
-
 # Apache
 alias apar='sudo /etc/init.d/apache2 restart'
 alias apastop='sudo /etc/init.d/apache2 stop'
