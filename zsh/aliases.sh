@@ -145,21 +145,3 @@ bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 
 disable -a sl
-
-# Fast navigation via aliases
-
-function prj () {
-  cd ~/Projects; echo 'Work Bitch!'
-}
-
-function mox () {
-  cd ~/Projects/mox; echo 'Work Bitch!'
-}
-
-function plov () {
-  cd ~/Projects/mox/plov; echo 'Work Bitch!'
-}
-
-function water () {
-  ssh crwatersolutions.com@shell1c1.megawebservers.com
-}
