@@ -2,6 +2,7 @@
 alias reload='source ~/.zshrc'
 alias ea='vim ~/zsh-antigen/zsh/aliases.sh && reload' # Edit aliases
 alias ec='vim ~/zsh-antigen/zsh/config.sh && reload' # Edit config
+alias ev='vim ~/zsh-antigen/zsh/env.sh && reload' # Edit environment specific vars
 alias ee='vim ~/zsh-antigen/zshrc && reload' # Edit zshrc
 alias trr='trs {=ru}'
 alias k='kill -9 %${1-1}'
@@ -61,8 +62,8 @@ alias glogg='git log --graph --decorate --oneline --abbrev-commit --all'
 alias groot='cd $(git rev-parse --show-cdup)'
 
 # Finder
-alias o='gnome-open'
-alias open='gnome-open'
+# alias o='gnome-open'
+# alias open='gnome-open'
 alias lh='gnome-open http://localhost'
 
 # python
@@ -91,6 +92,7 @@ alias puburl='dropbox puburl'
 
 # Editor
 alias e='vim'
+alias vim='/usr/local/bin/vim' # switch vim to the brew's one
 alias v='vim'
 alias vf='vim `fzf -m`' # https://github.com/junegunn/fzf
 alias gvim="gvim --remote-tab-silent"
