@@ -103,7 +103,7 @@ alias apastop='sudo /etc/init.d/apache2 stop'
 alias apastart='sudo /etc/init.d/apache2 start'
 alias apaconf='sudo vim /etc/apache2/apache2.conf'
 alias phpconf='sudo vim /etc/php5/apache2/php.ini'
-alias apacurdir='sudo mount -o bind . /var/www/html'
+alias apacurdir='sudo mount -t afp  . /Library/WebServer/Documents'
 alias apacurdirstop='sudo umount /var/www/html'
 
 # GDB
@@ -127,4 +127,12 @@ bindkey '^w' backward-kill-word
 # ctrl-r starts searching history backward
 bindkey '^r' history-incremental-search-backward
 
-disable -a sl
+# disable -a sl
+
+# WORK HARD BITCH
+alias work='sudo getshitdone work'
+alias play='sudo getshitdone play'
+alias t='todo.sh'
+
+# Open Source
+alias os='cd ~/Projects/open_source && echo "Start contributing, nigga."'
