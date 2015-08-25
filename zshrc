@@ -41,6 +41,9 @@ fi
 alias pretty='pygmentize -g -O encoding=utf-8'
 
 source $ZSHA_BASE/zsh/aliases.sh
+if [ -f $ZSHA_BASE/zsh/login_aliases.sh ]; then
+  source $ZSHA_BASE/zsh/login_aliases.sh
+fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
