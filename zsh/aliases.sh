@@ -1,6 +1,7 @@
 # Utility
 alias reload='source ~/.zshrc'
 alias ea='vim ~/zsh-antigen/zsh/aliases.sh && reload' # Edit aliases
+alias eal='vim ~/zsh-antigen/zsh/login_aliases.sh && reload' # Edit login aliases
 alias ec='vim ~/zsh-antigen/zsh/config.sh && reload' # Edit config
 alias ev='vim ~/zsh-antigen/zsh/env.sh && reload' # Edit environment specific vars
 alias ee='vim ~/zsh-antigen/zshrc && reload' # Edit zshrc
