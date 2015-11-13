@@ -1,4 +1,5 @@
 ZSHA_BASE=$HOME/zsh-antigen
+autoload -U zmv
 
 source $ZSHA_BASE/zsh/env.sh
 source $ZSHA_BASE/antigen/antigen.zsh
@@ -41,8 +42,8 @@ fi
 alias pretty='pygmentize -g -O encoding=utf-8'
 
 source $ZSHA_BASE/zsh/aliases.sh
-if [ -f $ZSHA_BASE/zsh/login_aliases.sh ]; then
-  source $ZSHA_BASE/zsh/login_aliases.sh
+if [ -f $HOME/bin/login_aliases.sh ]; then
+  source $HOME/bin/login_aliases.sh
 fi
 
 ### Added by the Heroku Toolbelt
@@ -60,3 +61,5 @@ export DOCKER_TLS_VERIFY=1
 export PATH="/usr/local/sbin:$PATH"
 
 export PATH="/opt/chefdk/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
