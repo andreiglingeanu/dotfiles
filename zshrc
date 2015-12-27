@@ -48,8 +48,14 @@ fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-source ~/.bin/tmuxinator.zsh
-source $ZSHA_BASE/todo_completion
+
+if [ -f ~/.bin/tmuxinator.zsh ]; then
+    source ~/.bin/tmuxinator.zsh
+fi
+
+if [ -f $ZSHA_BASE/todo_completion ]; then
+    source $ZSHA_BASE/todo_completion
+fi
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
