@@ -1,7 +1,7 @@
 # Utility
 alias reload='source ~/.zshrc'
 alias ea='vim ~/zsh-antigen/zsh/aliases.sh && reload' # Edit aliases
-alias eal='vim ~/bin/login_aliases.sh && reload' # Edit login aliases
+alias eal='vim ~/Dropbox/bin/login_aliases.sh && reload' # Edit login aliases
 alias ec='vim ~/zsh-antigen/zsh/config.sh && reload' # Edit config
 alias ev='vim ~/zsh-antigen/zsh/env.sh && reload' # Edit environment specific vars
 alias ee='vim ~/zsh-antigen/zshrc && reload' # Edit zshrc
@@ -61,6 +61,7 @@ alias gst='git status'
 alias gt='git status'
 alias glogg='git log --graph --decorate --oneline --abbrev-commit --all'
 alias groot='cd $(git rev-parse --show-cdup)'
+alias gmf='git merge --no-ff'
 
 # Finder
 # alias o='gnome-open'
@@ -136,4 +137,4 @@ alias play='sudo getshitdone play'
 alias t='todo.sh'
 
 # Open Source
-alias os='cd ~/Projects/open_source && echo "Start contributing, nigga."'
+alias os='cd ~/Dropbox/Projects/open_source && echo "Start contributing, nigga."'

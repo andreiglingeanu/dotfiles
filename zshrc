@@ -42,8 +42,8 @@ fi
 alias pretty='pygmentize -g -O encoding=utf-8'
 
 source $ZSHA_BASE/zsh/aliases.sh
-if [ -f $HOME/bin/login_aliases.sh ]; then
-  source $HOME/bin/login_aliases.sh
+if [ -f $HOME/Dropbox/bin/login_aliases.sh ]; then
+  source $HOME/Dropbox/bin/login_aliases.sh
 fi
 
 ### Added by the Heroku Toolbelt
