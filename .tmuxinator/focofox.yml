@@ -1,7 +1,7 @@
 # ~/.tmuxinator/focofox.yml
 
 name: focofox
-root: ~/Dropbox/Projects/brice/focofox
+root: ~/Projects/brice/focofox
 
 # Optional tmux socket
 # socket_name: foo
