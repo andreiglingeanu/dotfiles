@@ -1,14 +1,20 @@
 # Utility
 alias reload='source ~/.zshrc'
-alias ea='vim ~/zsh-antigen/zsh/aliases.sh && reload' # Edit aliases
-alias eal='vim ~/Dropbox/bin/login_aliases.sh && reload' # Edit login aliases
-alias ec='vim ~/zsh-antigen/zsh/config.sh && reload' # Edit config
-alias ev='vim ~/zsh-antigen/zsh/env.sh && reload' # Edit environment specific vars
-alias ee='vim ~/zsh-antigen/zshrc && reload' # Edit zshrc
+alias ea='v ~/zsh-antigen/zsh/aliases.sh && reload' # Edit aliases
+alias eal='v ~/Dropbox/bin/login_aliases.sh && reload' # Edit login aliases
+alias eas='v ~/secrets.sh && reload' # Edit secrets
+alias ec='v ~/zsh-antigen/zsh/config.sh && reload' # Edit config
+alias ev='v ~/zsh-antigen/zsh/env.sh && reload' # Edit environment specific vars
+alias ee='v ~/zsh-antigen/zshrc && reload' # Edit zshrc
 alias trr='trs {=ru}'
 alias k='kill -9 %${1-1}'
 alias to='touch'
 alias info='info --vi-keys'
+alias vg='vagrant'
+alias generate_secure_password='openssl passwd -1 "plaintextpassword"'
+alias generate_tags='ag -l | ctags --links=no -L-'
+alias wp_shell="wp --require=/Users/andreiglingeanu/Dropbox/bin/psysh shell"
+alias wk="/Users/andreiglingeanu/Dropbox/Projects/full && clear && echo 'do your work, motherfucker'"
 
 # copy & paste utilities
 alias copy='xclip -selection clipboard'
@@ -16,6 +22,7 @@ alias paste='xclip -selection clipboard -o'
 
 # Common
 alias gclo='git clone'
+alias gpl='git pull --rebase'
 alias c='clear'
 alias cdd='cd -' # goto last dir cd'ed from
 alias h='history'
@@ -96,7 +103,7 @@ alias puburl='dropbox puburl'
 alias e='vim'
 alias vim='/usr/local/bin/vim' # switch vim to the brew's one
 alias v='vim'
-alias vf='vim `fzf -m`' # https://github.com/junegunn/fzf
+alias vf='v `fzf -m`' # https://github.com/junegunn/fzf
 alias gvim="gvim --remote-tab-silent"
 
 # Apache

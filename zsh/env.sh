@@ -16,9 +16,20 @@ if [ -d "$HOME/.rbenv/bin" ] ; then
   PATH="$HOME/.rbenv/bin:$PATH"
 fi
 
+if [ -f "$HOME/secrets.sh" ] ; then
+  source $HOME/secrets.sh
+fi
+
 if [ -n "$TMUX" ]; then
   eval "$(rbenv init -)"
 fi
 
+if [ -d "$HOME/Dropbox/Projects/full/wp" ]; then
+  export WP_DEVELOP_DIR="$HOME/Dropbox/Projects/full/wp/"
+fi
+export WP_DEVELOP_THEME_NAME="ct"
+
 export LANG=ru_RU.UTF-8
 export PATH=$PATH:/Applications/Racket\ v6.1/bin
+
+source $(brew --prefix php-version)/php-version.sh && php-version 5

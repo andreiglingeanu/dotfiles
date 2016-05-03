@@ -16,6 +16,11 @@ antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen-bundle zsh-users/zsh-history-substring-search
 antigen-bundle $ZSHA_BASE/bundles/git-completion
 antigen-bundle felixr/docker-zsh-completion
+antigen-bundle vi-mode
+antigen-bundle vagrant
+# antigen-bundle denysdovhan/spaceship-zsh-theme
+# antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+
 
 antigen-theme kolo
 

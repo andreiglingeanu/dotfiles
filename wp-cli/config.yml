@@ -1,0 +1,4 @@
+server:
+  port: 3003
+
+require: /Users/andreiglingeanu/Dropbox/bin/psysh
