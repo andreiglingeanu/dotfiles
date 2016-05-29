@@ -1,0 +1,6 @@
+imap <C-o> editWithVim
+
+" alias ':g' to ':tabnew google'
+command g tabnew google
+
+let vimcommand = 'mvim -f'

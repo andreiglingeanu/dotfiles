@@ -79,7 +79,7 @@ alias lh='gnome-open http://localhost'
 alias py='python3'
 
 # ruby
-alias r='rails'
+alias r='bin/rails'
 
 # ruby gems
 alias gemi='gem install'
