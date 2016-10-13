@@ -14,11 +14,19 @@ alias vg='vagrant'
 alias generate_secure_password='openssl passwd -1 "plaintextpassword"'
 alias generate_tags='ag -l | ctags --links=no -L-'
 alias wp_shell="wp --require=/Users/andreiglingeanu/Dropbox/bin/psysh shell"
-alias wk="/Users/andreiglingeanu/Dropbox/Projects/full && clear && echo 'do your work, motherfucker'"
+alias wk="/Users/andreiglingeanu/Projects/full && clear && echo 'do your work, motherfucker'"
+
+alias editini="vim /usr/local/etc/php/5.6/php.ini"
+alias mamp="cd /Applications/MAMP/htdocs/"
 
 # copy & paste utilities
 alias copy='xclip -selection clipboard'
 alias paste='xclip -selection clipboard -o'
+
+# WordPress
+alias wp-cd='cd $(wp-path)'
+alias wp-content='cd "$(wp-path)/wp-content"'
+alias wp-unyson='cd /Users/andreiglingeanu/Projects/full/unyson'
 
 # Common
 alias gclo='git clone'
@@ -114,6 +122,10 @@ alias apaconf='sudo vim /etc/apache2/apache2.conf'
 alias phpconf='sudo vim /etc/php5/apache2/php.ini'
 alias apacurdir='sudo mount -t afp  . /Library/WebServer/Documents'
 alias apacurdirstop='sudo umount /var/www/html'
+
+# MAMP
+alias mamp_start="/Applications/MAMP/bin/startApache.sh"
+alias mamp_stop="/Applications/MAMP/bin/stopApache.sh"
 
 # GDB
 alias gdb='gdb -quiet'

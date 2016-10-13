@@ -2,5 +2,6 @@ imap <C-o> editWithVim
 
 " alias ':g' to ':tabnew google'
 command g tabnew google
+nmap NP :to 'http://localhost:3003/wp-admin/post-new.php?post_type=page'
 
 let vimcommand = 'mvim -f'

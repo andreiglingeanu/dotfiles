@@ -10,14 +10,15 @@ antigen-bundles <<EOBUNDLES
   git
   bundler
   tmux
+  wp-cli
 EOBUNDLES
 
 antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen-bundle zsh-users/zsh-history-substring-search
 antigen-bundle $ZSHA_BASE/bundles/git-completion
-antigen-bundle felixr/docker-zsh-completion
-antigen-bundle vi-mode
-antigen-bundle vagrant
+# antigen-bundle felixr/docker-zsh-completion
+# antigen-bundle vi-mode
+# antigen-bundle vagrant
 # antigen-bundle denysdovhan/spaceship-zsh-theme
 # antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 
@@ -51,6 +52,10 @@ if [ -f $HOME/Dropbox/bin/login_aliases.sh ]; then
   source $HOME/Dropbox/bin/login_aliases.sh
 fi
 
+if [ -f $HOME/Dropbox/bin/server_aliases.sh ]; then
+  source $HOME/Dropbox/bin/server_aliases.sh
+fi
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -74,3 +79,12 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/chefdk/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
+
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export WP_TESTS_DIR=/tmp/wordpress-tests-lib/

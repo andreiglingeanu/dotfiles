@@ -29,6 +29,12 @@ class Object
     end
     puts `ri '#{method}'`
   end
+
+  def invoke_rails_task task
+    require 'rake'
+    Rails.application.load_tasks
+    Rake::Task[task].invoke
+  end
 end
 
 def me

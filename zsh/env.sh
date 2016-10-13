@@ -7,6 +7,10 @@ if [ -d "$HOME/Dropbox/bin" ] ; then
   PATH="$PATH:$HOME/Dropbox/bin"
 fi
 
+if [ -d "$HOME/Dropbox/bin/wp-cli/bin" ] ; then
+  PATH="$PATH:$HOME/Dropbox/bin/wp-cli/bin"
+fi
+
 if [ -d "$HOME/.node/bin" ] ; then
   PATH="$PATH:$HOME/.node/bin"
 fi
