@@ -78,8 +78,8 @@ export PATH="/opt/chefdk/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh" --no-use
-export PATH="${PATH}:${NVM_DIR}/versions/node/${NODE_VERSION}/bin"
+. "$(brew --prefix nvm)/nvm.sh"
+# export PATH="${PATH}:${NVM_DIR}/versions/node/${NODE_VERSION}/bin"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
