@@ -37,3 +37,5 @@ export LANG=ru_RU.UTF-8
 export PATH=$PATH:/Applications/Racket\ v6.1/bin
 
 source $(brew --prefix php-version)/php-version.sh && php-version 5
+
+export GITHUB_TOKEN=4d3847a58be91cae701e26c6c36015f430f07c5d
