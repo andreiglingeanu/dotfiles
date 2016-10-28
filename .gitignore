@@ -1,2 +1,4 @@
 zsh/login_aliases.sh
 wp-cli/cache
+wp-cli/packages
+

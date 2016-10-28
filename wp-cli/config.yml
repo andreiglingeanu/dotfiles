@@ -2,5 +2,5 @@ server:
   port: 3004
   host: 0.0.0.0
 
-require: /Users/andreiglingeanu/Dropbox/bin/psysh
+require: /Users/andreiglingeanu/.composer/vendor/autoload.php
 path: /Users/andreiglingeanu/Projects/full/wp
