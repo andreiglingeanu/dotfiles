@@ -14,7 +14,9 @@ alias vg='vagrant'
 alias generate_secure_password='openssl passwd -1 "plaintextpassword"'
 alias generate_tags='ag -l | ctags --links=no -L-'
 alias wp_shell="wp --require=/Users/andreiglingeanu/Dropbox/bin/psysh shell"
-alias wk="/Users/andreiglingeanu/Projects/full && clear && echo 'do your work, motherfucker'"
+alias wk="cd /Users/andreiglingeanu/Projects/full && clear && echo 'do your work, motherfucker'"
+
+alias ls="ls -G"
 
 alias editini="vim /usr/local/etc/php/5.6/php.ini"
 alias mamp="cd /Applications/MAMP/htdocs/"

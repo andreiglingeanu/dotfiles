@@ -18,10 +18,6 @@ promptinit;
 # Extended globbing
 setopt extended_glob
 
-# Rvm stuff
-[[ -s "$HOME/.rvm/scripts/rvm" ]]
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
-
 # launch tmux by default
 # TMUX
 #if [[ ! $TERM =~ screen ]]; then
