@@ -11,30 +11,27 @@ if [ -d "$HOME/Dropbox/bin/wp-cli/bin" ] ; then
   PATH="$PATH:$HOME/Dropbox/bin/wp-cli/bin"
 fi
 
-if [ -d "$HOME/.node/bin" ] ; then
-  PATH="$PATH:$HOME/.node/bin"
-fi
-
-# include rbenv path
-if [ -d "$HOME/.rbenv/bin" ] ; then
-  PATH="$HOME/.rbenv/bin:$PATH"
-fi
-
-if [ -f "$HOME/secrets.sh" ] ; then
-  source $HOME/secrets.sh
-fi
-
-if [ -n "$TMUX" ]; then
-  eval "$(rbenv init -)"
-fi
-
 if [ -d "$HOME/Dropbox/Projects/full/wp" ]; then
   export WP_DEVELOP_DIR="$HOME/Dropbox/Projects/full/wp/"
 fi
+
 export WP_DEVELOP_THEME_NAME="ct"
 
+export WP_TESTS_DIR=/tmp/wordpress-tests-lib/
+
+
 export LANG=ru_RU.UTF-8
-export PATH=$PATH:/Applications/Racket\ v6.1/bin
 
-source $(brew --prefix php-version)/php-version.sh && php-version 5
+export CDPATH=$CDPATH:$HOME/Sites:$HOME
+export PATH=$HOME/bin:/opt/homebrew/bin:$HOME/.composer/vendor/bin:/usr/local/mysql/bin:$PATH
+export VMWWW=/Volumes/www/html
+export VMPHP=/Volumes/www/phpapps
+export EDITOR=vim
+export ANDROID_HOME=~/Development/sdk
+export PATH=$PATH:~/Development/sdk/platform-tools:~/Development/sdk/tools
+export PATH=$PATH:/usr/local/smlnj/bin
 
+export GOPATH=$HOME/Go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin

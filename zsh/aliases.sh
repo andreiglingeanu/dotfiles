@@ -324,3 +324,9 @@ alias gupv='git pull --rebase -v'
 alias glum='git pull upstream master'
 
 
+##########
+#  tmux  #
+##########
+alias ta='tmux attach -t'
+
+

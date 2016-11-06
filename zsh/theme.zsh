@@ -1,3 +1,4 @@
+: <<'END'
 autoload -Uz vcs_info
 
 zstyle ':vcs_info:*' stagedstr '%F{green}●'
@@ -14,10 +15,12 @@ theme_precmd () {
 
     vcs_info
 }
+END
 
 setopt prompt_subst
-PROMPT='%B%F{black}%c%B%F{green}${vcs_info_msg_0_}%B%F{red} %{$reset_color%}%% '
+# PROMPT='%B%F{black}%c%B%F{green}${vcs_info_msg_0_}%B%F{red} %{$reset_color%}%% '
+PROMPT='%B%F{black}%c%B%F{green}%B%F{red} %{$reset_color%}%% '
 
-autoload -U add-zsh-hook
-add-zsh-hook precmd  theme_precmd
+# autoload -U add-zsh-hook
+# add-zsh-hook precmd  theme_precmd
 
