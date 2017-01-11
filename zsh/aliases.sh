@@ -16,6 +16,8 @@ alias generate_tags='ag -l | ctags --links=no -L-'
 alias wp_shell="wp --require=/Users/andreiglingeanu/Dropbox/bin/psysh shell"
 alias wk="cd /Users/andreiglingeanu/Projects/full && clear && echo 'do your work, motherfucker'"
 
+alias blog="cd ~/blog"
+
 alias ls="ls -G"
 
 alias editini="vim /usr/local/etc/php/5.6/php.ini"
@@ -24,6 +26,11 @@ alias mamp="cd /Applications/MAMP/htdocs/"
 # copy & paste utilities
 alias copy='xclip -selection clipboard'
 alias paste='xclip -selection clipboard -o'
+
+function take () {
+	mkdir $1
+	cd $1
+}
 
 # WordPress
 alias wp-cd='cd $(wp-path)'

@@ -34,12 +34,12 @@ group_lazy_load() {
 #  NVM  #
 #########
 export NVM_DIR=~/.nvm
-group_lazy_load $HOME/.nvm/nvm.sh nvm node npm gulp vue-cli
+group_lazy_load $HOME/.nvm/nvm.sh nvm node npm gulp vue yarn flow react-native
 
 ##########
 #  ruby  #
 ##########
-group_lazy_load $ZSHA_BASE/autoloads/rbenv.sh rbenv ruby rails irb
+group_lazy_load $ZSHA_BASE/autoloads/rbenv.sh rbenv ruby rails irb cap rake bundle sidekiq
 
 #################
 #  php-version  #

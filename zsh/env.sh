@@ -15,7 +15,7 @@ if [ -d "$HOME/Dropbox/Projects/full/wp" ]; then
   export WP_DEVELOP_DIR="$HOME/Dropbox/Projects/full/wp/"
 fi
 
-export WP_DEVELOP_THEME_NAME="ct"
+# export WP_DEVELOP_THEME_NAME="ct"
 
 export WP_TESTS_DIR=/tmp/wordpress-tests-lib/
 
