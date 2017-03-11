@@ -165,7 +165,7 @@ alias play='sudo getshitdone play'
 alias t='todo.sh'
 
 # Open Source
-alias os='cd ~/Dropbox/Projects/open_source && echo "Start contributing, nigga."'
+alias os='cd ~/Projects/open_source && echo "Start contributing, nigga."'
 
 #########
 #  GIT  #

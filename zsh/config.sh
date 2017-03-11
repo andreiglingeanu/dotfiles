@@ -28,3 +28,5 @@ setopt extended_glob
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export PKG_CONFIG_PATH="/opt/ImageMagick/lib/pkgconfig"
+

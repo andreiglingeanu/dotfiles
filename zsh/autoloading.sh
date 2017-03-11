@@ -34,7 +34,7 @@ group_lazy_load() {
 #  NVM  #
 #########
 export NVM_DIR=~/.nvm
-group_lazy_load $HOME/.nvm/nvm.sh nvm node npm gulp vue yarn flow react-native
+group_lazy_load $HOME/.nvm/nvm.sh nvm node npm gulp vue yarn flow react-native node-debug node-inspector
 
 ##########
 #  ruby  #

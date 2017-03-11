@@ -31,3 +31,5 @@ export LANG=en_US.UTF-8
 
 bindkey -e
 
+# TODO: config $cdpath
+
