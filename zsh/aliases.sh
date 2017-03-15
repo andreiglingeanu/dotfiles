@@ -16,6 +16,8 @@ alias generate_tags='ag -l | ctags --links=no -L-'
 alias wp_shell="wp --require=/Users/andreiglingeanu/Dropbox/bin/psysh shell"
 alias wk="cd /Users/andreiglingeanu/Projects/full && clear && echo 'do your work, motherfucker'"
 
+alias edit_secrets="vim ~/Dropbox/bin/login_aliases.sh && reload"
+
 alias blog="cd ~/blog"
 
 alias ls="ls -G"
@@ -336,4 +338,32 @@ alias glum='git pull upstream master'
 ##########
 alias ta='tmux attach -t'
 
+
+###################
+#  brew services  #
+###################
+alias bss='brew services start $@'
+alias bst='brew services stop $@'
+alias bsl='brew services list'
+
+################
+#  fuck mouse  #
+################
+function fuckmouse() {
+	launchctl start com.andreiglingeanu.nomouse
+}
+
+# brew install brightness
+function needmouse() {
+	brightness 1
+	launchctl stop com.andreiglingeanu.nomouse
+}
+
+function light () {
+	brightness 1
+}
+
+function dark () {
+	brightness 0.4
+}
 
