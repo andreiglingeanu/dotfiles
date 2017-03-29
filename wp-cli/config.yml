@@ -3,4 +3,6 @@ server:
   host: 0.0.0.0
 
 require: /Users/andreiglingeanu/.composer/vendor/autoload.php
-path: /Users/andreiglingeanu/Projects/full/wp
+
+# TODO: configure default wp PATH after install
+# path: /Users/andreiglingeanu/Projects/
