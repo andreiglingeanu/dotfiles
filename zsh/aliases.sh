@@ -120,7 +120,7 @@ alias puburl='dropbox puburl'
 
 # Editor
 alias e='vim'
-alias vim='/usr/local/bin/vim' # switch vim to the brew's one
+# alias vim='/usr/local/bin/vim' # switch vim to the brew's one
 alias v='vim'
 alias vf='v `fzf -m`' # https://github.com/junegunn/fzf
 alias gvim="gvim --remote-tab-silent"

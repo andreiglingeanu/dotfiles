@@ -44,7 +44,7 @@ group_lazy_load $ZSHA_BASE/autoloads/rbenv.sh rbenv ruby rails irb cap rake bund
 #################
 #  php-version  #
 #################
-group_lazy_load $ZSHA_BASE/autoloads/php-version.sh php-version php wp
+group_lazy_load $ZSHA_BASE/autoloads/php-version.sh php-version php wp unyson-testing unyson-testing-drop
 
 
 
