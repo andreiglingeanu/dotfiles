@@ -1,8 +1,0 @@
-# ~/.tmuxinator/ct.yml
-
-name: unyson
-root: ~/Projects/full/wp/wp-content/plugins/unyson
-
-windows:
-  - editor: g
-
