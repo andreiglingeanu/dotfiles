@@ -149,7 +149,6 @@ bindkey '^r' history-incremental-search-backward
 # WORK HARD
 alias work='sudo getshitdone work'
 alias play='sudo getshitdone play'
-alias t='todo.sh'
 
 # Open Source
 alias os='cd ~/Projects/open_source && echo "Start contributing, nigga."'
