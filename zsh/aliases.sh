@@ -1,24 +1,22 @@
 # Utility
 alias reload='source ~/.zshrc'
-alias ea='v ~/zsh-antigen/zsh/aliases.sh && reload' # Edit aliases
-alias eal='v ~/Dropbox/bin/login_aliases.sh && reload' # Edit login aliases
-alias eas='v ~/secrets.sh && reload' # Edit secrets
-alias ec='v ~/zsh-antigen/zsh/config.sh && reload' # Edit config
-alias ev='v ~/zsh-antigen/zsh/env.sh && reload' # Edit environment specific vars
-alias ee='v ~/zsh-antigen/zshrc && reload' # Edit zshrc
+alias ea="v $ZSHA_BASE/zsh/aliases.sh && reload" # Edit aliases
+alias edit_secrets="vim ~/Dropbox/bin/login_aliases.sh && reload"
+
+alias ec="v $ZSHA_BASE/zsh/config.sh && reload" # Edit config
+alias ev="v $ZSHA_BASE/zsh/env.sh && reload" # Edit environment specific vars
+alias ee="v $ZSHA_BASE/zshrc && reload" # Edit zshrc
 alias trr='trs {=ru}'
 alias k='kill -9 %${1-1}'
 alias to='touch'
 alias info='info --vi-keys'
 alias vg='vagrant'
+
 alias generate_secure_password='openssl passwd -1 "plaintextpassword"'
 alias generate_tags='ag -l | ctags --links=no -L-'
-alias wp_shell="wp --require=/Users/andreiglingeanu/Dropbox/bin/psysh shell"
+
 alias wk="cd /Users/andreiglingeanu/Projects/full && clear && echo 'do your work, motherfucker'"
 
-alias edit_secrets="vim ~/Dropbox/bin/login_aliases.sh && reload"
-
-alias blog="cd ~/blog"
 
 alias ls="ls -G"
 
@@ -46,12 +44,13 @@ alias c='clear'
 alias cdd='cd -' # goto last dir cd'ed from
 alias h='history'
 alias s='cd ..'
-alias e='exit'
+
 alias vic='vim -u NONE -N'
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
 function zipr() {
   zip -r $1.zip $1
 }
+
 function extract {
   echo Extracting $1 ...
   if [ -f $1 ] ; then
@@ -73,6 +72,7 @@ function extract {
       echo "'$1' is not a valid file"
   fi
 }
+
 alias grep='grep --colour=auto'
 alias rf='rm -rf $*'
 
@@ -82,6 +82,7 @@ alias ungit="find . -name '.git' -exec rm -rf {} \;"
 function gac() {
   git commit -v -a -m "$*"
 }
+
 alias g='git status'
 alias gst='git status'
 alias gt='git status'
@@ -92,16 +93,9 @@ alias gmf='git merge --no-ff'
 # Finder
 # alias o='gnome-open'
 # alias open='gnome-open'
-alias lh='gnome-open http://localhost'
 
 # python
 alias py='python3'
-
-# ruby
-alias r='bin/rails'
-
-# ruby gems
-alias gemi='gem install'
 
 # tmux
 alias tmux='tmux -2'
@@ -113,17 +107,11 @@ function mysqldb() {
   mysql -u root -p -e "CREATE DATABASE $1 CHARACTER SET utf8 COLLATE utf8_bin;"
 }
 
-
-# dropbox
-alias puburl='dropbox puburl'
-
-
 # Editor
 alias e='vim'
+
 # alias vim='/usr/local/bin/vim' # switch vim to the brew's one
 alias v='vim'
-alias vf='v `fzf -m`' # https://github.com/junegunn/fzf
-alias gvim="gvim --remote-tab-silent"
 
 # Apache
 alias apar='sudo /etc/init.d/apache2 restart'
@@ -135,14 +123,11 @@ alias apacurdir='sudo mount -t afp  . /Library/WebServer/Documents'
 alias apacurdirstop='sudo umount /var/www/html'
 
 # MAMP
-alias mamp_start="/Applications/MAMP/bin/startApache.sh"
-alias mamp_stop="/Applications/MAMP/bin/stopApache.sh"
+# alias mamp_start="/Applications/MAMP/bin/startApache.sh"
+# alias mamp_stop="/Applications/MAMP/bin/stopApache.sh"
 
 # GDB
 alias gdb='gdb -quiet'
-
-# Mega sync all my screencasts
-alias synccasts='megacmd sync ~/Videos/Screencasts mega:/Screencasts'
 
 # Use vim cli mode
 bindkey '^P' up-history
@@ -161,7 +146,7 @@ bindkey '^r' history-incremental-search-backward
 
 # disable -a sl
 
-# WORK HARD BITCH
+# WORK HARD
 alias work='sudo getshitdone work'
 alias play='sudo getshitdone play'
 alias t='todo.sh'
@@ -332,12 +317,10 @@ alias gup='git pull --rebase'
 alias gupv='git pull --rebase -v'
 alias glum='git pull upstream master'
 
-
 ##########
 #  tmux  #
 ##########
 alias ta='tmux attach -t'
-
 
 ###################
 #  brew services  #
@@ -345,25 +328,4 @@ alias ta='tmux attach -t'
 alias bss='brew services start $@'
 alias bst='brew services stop $@'
 alias bsl='brew services list'
-
-################
-#  fuck mouse  #
-################
-function fuckmouse() {
-	launchctl start com.andreiglingeanu.nomouse
-}
-
-# brew install brightness
-function needmouse() {
-	brightness 1
-	launchctl stop com.andreiglingeanu.nomouse
-}
-
-function light () {
-	brightness 1
-}
-
-function dark () {
-	brightness 0.4
-}
 
