@@ -3,6 +3,18 @@ if [ -d "$HOME/bin" ] ; then
   PATH="$PATH:$HOME/bin"
 fi
 
+if [ -d "$HOME/.linuxbrew/bin" ] ; then
+  PATH="$PATH:$HOME/.linuxbrew/bin"
+fi
+
+if [ -d "$HOME/.linuxbrew/share/man" ] ; then
+  export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+fi
+
+if [ -d "$HOME/.linuxbrew/share/info" ] ; then
+  export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+fi
+
 if [ -d "$HOME/Dropbox/bin" ] ; then
   PATH="$PATH:$HOME/Dropbox/bin"
 fi
