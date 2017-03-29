@@ -14,6 +14,7 @@ antibody bundle zsh-users/zsh-syntax-highlighting
 antibody bundle zsh-users/zsh-history-substring-search
 
 source $ZSHA_BASE/zsh/aliases.sh
+source $ZSHA_BASE/zsh/git_aliases.sh
 source $ZSHA_BASE/zsh/autoloading.sh
 
 if [ -f $HOME/Dropbox/bin/login_aliases.sh ]; then
