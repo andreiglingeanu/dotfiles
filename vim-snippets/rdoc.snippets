@@ -1,0 +1,76 @@
+# {link}[url]text
+snippet {} "{}"
+{${1:link}}[http://${2:url}]${3}
+endsnippet
+
+# {name}[email]text
+snippet {@ "{@"
+{${1:name}}[mailto:${2:email}]${3}
+endsnippet
+
+# {link}[local]text
+snippet {l "{l"
+{${1:link}}[link:${2:local}]${3}
+endsnippet
+
+# *bold*
+snippet * "*"
+*${1}*${2}
+endsnippet
+
+# _emphasis_
+snippet _ "_"
+_${1}_${2}
+endsnippet
+
+# +code+
+snippet + "+"
++${1}+${2}
+endsnippet
+
+# === title
+snippet 3= "3="
+=== ${1:title}
+${2}
+endsnippet
+
+# ==== title
+snippet 4= "4="
+==== ${1:title}
+${2}
+endsnippet
+
+# ===== title
+snippet 5= "5="
+===== ${1:title}
+${2}
+endsnippet
+
+# ====== title
+snippet 6= "6="
+====== ${1:title}
+${2}
+endsnippet
+
+# [item]  description
+snippet [] "[]"
+[${1:item}] ${2:description}
+endsnippet
+
+# [*item*]  description
+snippet [* "[*"
+[*${1:item}*] ${2:description}
+endsnippet
+
+# item :: description
+snippet :: "::"
+${1:item} :: ${2:description}
+endsnippet
+
+# *item* :: description
+snippet :* ":*"
+*${1:item}* :: ${2:description}
+endsnippet
+
+
+

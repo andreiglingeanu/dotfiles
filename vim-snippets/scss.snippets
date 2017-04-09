@@ -1,0 +1,1941 @@
+snippet ! "!"
+!important
+endsnippet
+
+snippet bdi:m+ "bdi:m+"
+-moz-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};
+endsnippet
+
+snippet placeholder "Cross browser placeholder style" w
+::-webkit-input-placeholder {
+    $1
+}
+
+:-moz-placeholder {
+    $1
+}
+
+::-moz-placeholder {
+    $1
+}
+
+:-ms-input-placeholder {
+    $1
+}
+$0
+endsnippet
+
+snippet bdi:m "bdi:m"
+-moz-border-image: ${1};
+endsnippet
+
+snippet bdrz:m "bdrz:m"
+-moz-border-radius: ${1};
+endsnippet
+
+snippet bxsh:m+ "bxsh:m+"
+-moz-box-shadow: ${1:0} ${2:0} ${3:0} #${4:000};
+endsnippet
+
+snippet bxsh:m "bxsh:m"
+-moz-box-shadow: ${1};
+endsnippet
+
+snippet bdi:w+ "bdi:w+"
+-webkit-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};
+endsnippet
+
+snippet bdi:w "bdi:w"
+-webkit-border-image: ${1};
+endsnippet
+
+snippet bdrz:w "bdrz:w"
+-webkit-border-radius: ${1};
+endsnippet
+
+snippet bxsh:w+ "bxsh:w+"
+-webkit-box-shadow: ${1:0} ${2:0} ${3:0} #${4:000};
+endsnippet
+
+snippet bxsh:w "bxsh:w"
+-webkit-box-shadow: ${1};
+endsnippet
+
+snippet @f "@f"
+@font-face {
+	font-family: ${1};
+	src: url(${2});
+}
+endsnippet
+
+snippet @i "@i"
+@import url(${1});
+endsnippet
+
+snippet @m "@m"
+@media ${1:print} {
+	${2}
+}
+endsnippet
+
+snippet bg+ "bg+"
+background: #${1:FFF} url(${2}) ${3:0} ${4:0} ${5:no-repeat};
+endsnippet
+
+snippet bga "bga"
+background-attachment: ${1};
+endsnippet
+
+snippet bga:f "bga:f"
+background-attachment: fixed;
+endsnippet
+
+snippet bga:s "bga:s"
+background-attachment: scroll;
+endsnippet
+
+snippet bgbk "bgbk"
+background-break: ${1};
+endsnippet
+
+snippet bgbk:bb "bgbk:bb"
+background-break: bounding-box;
+endsnippet
+
+snippet bgbk:c "bgbk:c"
+background-break: continuous;
+endsnippet
+
+snippet bgbk:eb "bgbk:eb"
+background-break: each-box;
+endsnippet
+
+snippet bgcp "bgcp"
+background-clip: ${1};
+endsnippet
+
+snippet bgcp:bb "bgcp:bb"
+background-clip: border-box;
+endsnippet
+
+snippet bgcp:cb "bgcp:cb"
+background-clip: content-box;
+endsnippet
+
+snippet bgcp:nc "bgcp:nc"
+background-clip: no-clip;
+endsnippet
+
+snippet bgcp:pb "bgcp:pb"
+background-clip: padding-box;
+endsnippet
+
+snippet bgc "bgc"
+background-color: #${1:FFF};
+endsnippet
+
+snippet bgc:t "bgc:t"
+background-color: transparent;
+endsnippet
+
+snippet bgi "bgi"
+background-image: url(${1});
+endsnippet
+
+snippet bgi:n "bgi:n"
+background-image: none;
+endsnippet
+
+snippet bgo "bgo"
+background-origin: ${1};
+endsnippet
+
+snippet bgo:bb "bgo:bb"
+background-origin: border-box;
+endsnippet
+
+snippet bgo:cb "bgo:cb"
+background-origin: content-box;
+endsnippet
+
+snippet bgo:pb "bgo:pb"
+background-origin: padding-box;
+endsnippet
+
+snippet bgpx "bgpx"
+background-position-x: ${1};
+endsnippet
+
+snippet bgpy "bgpy"
+background-position-y: ${1};
+endsnippet
+
+snippet bgp "bgp"
+background-position: ${1:0} ${2:0};
+endsnippet
+
+snippet bgr "bgr"
+background-repeat: ${1};
+endsnippet
+
+snippet bgr:n "bgr:n"
+background-repeat: no-repeat;
+endsnippet
+
+snippet bgr:x "bgr:x"
+background-repeat: repeat-x;
+endsnippet
+
+snippet bgr:y "bgr:y"
+background-repeat: repeat-y;
+endsnippet
+
+snippet bgr:r "bgr:r"
+background-repeat: repeat;
+endsnippet
+
+snippet bgz "bgz"
+background-size: ${1};
+endsnippet
+
+snippet bgz:a "bgz:a"
+background-size: auto;
+endsnippet
+
+snippet bgz:ct "bgz:ct"
+background-size: contain;
+endsnippet
+
+snippet bgz:cv "bgz:cv"
+background-size: cover;
+endsnippet
+
+snippet bg "bg"
+background: ${1};
+endsnippet
+
+snippet bg:ie "bg:ie"
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1}',sizingMethod='${2:crop}');
+endsnippet
+
+snippet bg:n "bg:n"
+background: none;
+endsnippet
+
+snippet bd+ "bd+"
+border: ${1:1px} ${2:solid} #${3:000};
+endsnippet
+
+snippet bdb+ "bdb+"
+border-bottom: ${1:1px} ${2:solid} #${3:000};
+endsnippet
+
+snippet bdbc "bdbc"
+border-bottom-color: #${1:000};
+endsnippet
+
+snippet bdbi "bdbi"
+border-bottom-image: url(${1});
+endsnippet
+
+snippet bdbi:n "bdbi:n"
+border-bottom-image: none;
+endsnippet
+
+snippet bdbli "bdbli"
+border-bottom-left-image: url(${1});
+endsnippet
+
+snippet bdbli:c "bdbli:c"
+border-bottom-left-image: continue;
+endsnippet
+
+snippet bdbli:n "bdbli:n"
+border-bottom-left-image: none;
+endsnippet
+
+snippet bdblrz "bdblrz"
+border-bottom-left-radius: ${1};
+endsnippet
+
+snippet bdbri "bdbri"
+border-bottom-right-image: url(${1});
+endsnippet
+
+snippet bdbri:c "bdbri:c"
+border-bottom-right-image: continue;
+endsnippet
+
+snippet bdbri:n "bdbri:n"
+border-bottom-right-image: none;
+endsnippet
+
+snippet bdbrrz "bdbrrz"
+border-bottom-right-radius: ${1};
+endsnippet
+
+snippet bdbs "bdbs"
+border-bottom-style: ${1};
+endsnippet
+
+snippet bdbs:n "bdbs:n"
+border-bottom-style: none;
+endsnippet
+
+snippet bdbw "bdbw"
+border-bottom-width: ${1};
+endsnippet
+
+snippet bdb "bdb"
+border-bottom: ${1};
+endsnippet
+
+snippet bdb:n "bdb:n"
+border-bottom: none;
+endsnippet
+
+snippet bdbk "bdbk"
+border-break: ${1};
+endsnippet
+
+snippet bdbk:c "bdbk:c"
+border-break: close;
+endsnippet
+
+snippet bdcl "bdcl"
+border-collapse: ${1};
+endsnippet
+
+snippet bdcl:c "bdcl:c"
+border-collapse: collapse;
+endsnippet
+
+snippet bdcl:s "bdcl:s"
+border-collapse: separate;
+endsnippet
+
+snippet bdc "bdc"
+border-color: #${1:000};
+endsnippet
+
+snippet bdci "bdci"
+border-corner-image: url(${1});
+endsnippet
+
+snippet bdci:c "bdci:c"
+border-corner-image: continue;
+endsnippet
+
+snippet bdci:n "bdci:n"
+border-corner-image: none;
+endsnippet
+
+snippet bdf "bdf"
+border-fit: ${1};
+endsnippet
+
+snippet bdf:c "bdf:c"
+border-fit: clip;
+endsnippet
+
+snippet bdf:of "bdf:of"
+border-fit: overwrite;
+endsnippet
+
+snippet bdf:ow "bdf:ow"
+border-fit: overwrite;
+endsnippet
+
+snippet bdf:r "bdf:r"
+border-fit: repeat;
+endsnippet
+
+snippet bdf:sc "bdf:sc"
+border-fit: scale;
+endsnippet
+
+snippet bdf:sp "bdf:sp"
+border-fit: space;
+endsnippet
+
+snippet bdf:st "bdf:st"
+border-fit: stretch;
+endsnippet
+
+snippet bdi "bdi"
+border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};
+endsnippet
+
+snippet bdi:n "bdi:n"
+border-image: none;
+endsnippet
+
+snippet bdl+ "bdl+"
+border-left: ${1:1px} ${2:solid} #${3:000};
+endsnippet
+
+snippet bdlc "bdlc"
+border-left-color: #${1:000};
+endsnippet
+
+snippet bdli "bdli"
+border-left-image: url(${1});
+endsnippet
+
+snippet bdli:n "bdli:n"
+border-left-image: none;
+endsnippet
+
+snippet bdls "bdls"
+border-left-style: ${1};
+endsnippet
+
+snippet bdls:n "bdls:n"
+border-left-style: none;
+endsnippet
+
+snippet bdlw "bdlw"
+border-left-width: ${1};
+endsnippet
+
+snippet bdl "bdl"
+border-left: ${1};
+endsnippet
+
+snippet bdl:n "bdl:n"
+border-left: none;
+endsnippet
+
+snippet bdlt "bdlt"
+border-length: ${1};
+endsnippet
+
+snippet bdlt:a "bdlt:a"
+border-length: auto;
+endsnippet
+
+snippet bdrz "bdrz"
+border-radius: ${1};
+endsnippet
+
+snippet bdr+ "bdr+"
+border-right: ${1:1px} ${2:solid} #${3:000};
+endsnippet
+
+snippet bdrc "bdrc"
+border-right-color: #${1:000};
+endsnippet
+
+snippet bdri "bdri"
+border-right-image: url(${1});
+endsnippet
+
+snippet bdri:n "bdri:n"
+border-right-image: none;
+endsnippet
+
+snippet bdrs "bdrs"
+border-right-style: ${1};
+endsnippet
+
+snippet bdrs:n "bdrs:n"
+border-right-style: none;
+endsnippet
+
+snippet bdrw "bdrw"
+border-right-width: ${1};
+endsnippet
+
+snippet bdr "bdr"
+border-right: ${1};
+endsnippet
+
+snippet bdr:n "bdr:n"
+border-right: none;
+endsnippet
+
+snippet bdsp "bdsp"
+border-spacing: ${1};
+endsnippet
+
+snippet bds "bds"
+border-style: ${1};
+endsnippet
+
+snippet bds:ds "bds:ds"
+border-style: dashed;
+endsnippet
+
+snippet bds:dtds "bds:dtds"
+border-style: dot-dash;
+endsnippet
+
+snippet bds:dtdtds "bds:dtdtds"
+border-style: dot-dot-dash;
+endsnippet
+
+snippet bds:dt "bds:dt"
+border-style: dotted;
+endsnippet
+
+snippet bds:db "bds:db"
+border-style: double;
+endsnippet
+
+snippet bds:g "bds:g"
+border-style: groove;
+endsnippet
+
+snippet bds:h "bds:h"
+border-style: hidden;
+endsnippet
+
+snippet bds:i "bds:i"
+border-style: inset;
+endsnippet
+
+snippet bds:n "bds:n"
+border-style: none;
+endsnippet
+
+snippet bds:o "bds:o"
+border-style: outset;
+endsnippet
+
+snippet bds:r "bds:r"
+border-style: ridge;
+endsnippet
+
+snippet bds:s "bds:s"
+border-style: solid;
+endsnippet
+
+snippet bds:w "bds:w"
+border-style: wave;
+endsnippet
+
+snippet bdt+ "bdt+"
+border-top: ${1:1px} ${2:solid} #${3:000};
+endsnippet
+
+snippet bdtc "bdtc"
+border-top-color: #${1:000};
+endsnippet
+
+snippet bdti "bdti"
+border-top-image: url(${1});
+endsnippet
+
+snippet bdti:n "bdti:n"
+border-top-image: none;
+endsnippet
+
+snippet bdtli "bdtli"
+border-top-left-image: url(${1});
+endsnippet
+
+snippet bdtli:c "bdtli:c"
+border-corner-image: continue;
+endsnippet
+
+snippet bdtli:n "bdtli:n"
+border-corner-image: none;
+endsnippet
+
+snippet bdtlrz "bdtlrz"
+border-top-left-radius: ${1};
+endsnippet
+
+snippet bdtri "bdtri"
+border-top-right-image: url(${1});
+endsnippet
+
+snippet bdtri:c "bdtri:c"
+border-top-right-image: continue;
+endsnippet
+
+snippet bdtri:n "bdtri:n"
+border-top-right-image: none;
+endsnippet
+
+snippet bdtrrz "bdtrrz"
+border-top-right-radius: ${1};
+endsnippet
+
+snippet bdts "bdts"
+border-top-style: ${1};
+endsnippet
+
+snippet bdts:n "bdts:n"
+border-top-style: none;
+endsnippet
+
+snippet bdtw "bdtw"
+border-top-width: ${1};
+endsnippet
+
+snippet bdt "bdt"
+border-top: ${1};
+endsnippet
+
+snippet bdt:n "bdt:n"
+border-top: none;
+endsnippet
+
+snippet bdw "bdw"
+border-width: ${1};
+endsnippet
+
+snippet bd "bd"
+border: ${1};
+endsnippet
+
+snippet bd:n "bd:n"
+border: none;
+endsnippet
+
+snippet b "b"
+bottom: ${1};
+endsnippet
+
+snippet b:a "b:a"
+bottom: auto;
+endsnippet
+
+snippet bxsh+ "bxsh+"
+box-shadow: ${1:0} ${2:0} ${3:0} #${4:000};
+endsnippet
+
+snippet bxsh "bxsh"
+box-shadow: ${1};
+endsnippet
+
+snippet bxsh:n "bxsh:n"
+box-shadow: none;
+endsnippet
+
+snippet bxz "bxz"
+box-sizing: ${1};
+endsnippet
+
+snippet bxz:bb "bxz:bb"
+box-sizing: border-box;
+endsnippet
+
+snippet bxz:cb "bxz:cb"
+box-sizing: content-box;
+endsnippet
+
+snippet cps "cps"
+caption-side: ${1};
+endsnippet
+
+snippet cps:b "cps:b"
+caption-side: bottom;
+endsnippet
+
+snippet cps:t "cps:t"
+caption-side: top;
+endsnippet
+
+snippet cl "cl"
+clear: ${1};
+endsnippet
+
+snippet cl:b "cl:b"
+clear: both;
+endsnippet
+
+snippet cl:l "cl:l"
+clear: left;
+endsnippet
+
+snippet cl:n "cl:n"
+clear: none;
+endsnippet
+
+snippet cl:r "cl:r"
+clear: right;
+endsnippet
+
+snippet cp "cp"
+clip: ${1};
+endsnippet
+
+snippet cp:a "cp:a"
+clip: auto;
+endsnippet
+
+snippet cp:r "cp:r"
+clip: rect(${1:0} ${2:0} ${3:0} ${4:0});
+endsnippet
+
+snippet c "c"
+color: #${1:000};
+endsnippet
+
+snippet ct "ct"
+content: ${1};
+endsnippet
+
+snippet ct:a "ct:a"
+content: attr(${1});
+endsnippet
+
+snippet ct:cq "ct:cq"
+content: close-quote;
+endsnippet
+
+snippet ct:c "ct:c"
+content: counter(${1});
+endsnippet
+
+snippet ct:cs "ct:cs"
+content: counters(${1});
+endsnippet
+
+snippet ct:ncq "ct:ncq"
+content: no-close-quote;
+endsnippet
+
+snippet ct:noq "ct:noq"
+content: no-open-quote;
+endsnippet
+
+snippet ct:n "ct:n"
+content: normal;
+endsnippet
+
+snippet ct:oq "ct:oq"
+content: open-quote;
+endsnippet
+
+snippet coi "coi"
+counter-increment: ${1};
+endsnippet
+
+snippet cor "cor"
+counter-reset: ${1};
+endsnippet
+
+snippet cur "cur"
+cursor: ${1};
+endsnippet
+
+snippet cur:a "cur:a"
+cursor: auto;
+endsnippet
+
+snippet cur:c "cur:c"
+cursor: crosshair;
+endsnippet
+
+snippet cur:d "cur:d"
+cursor: default;
+endsnippet
+
+snippet cur:ha "cur:ha"
+cursor: hand;
+endsnippet
+
+snippet cur:he "cur:he"
+cursor: help;
+endsnippet
+
+snippet cur:m "cur:m"
+cursor: move;
+endsnippet
+
+snippet cur:p "cur:p"
+cursor: pointer;
+endsnippet
+
+snippet cur:t "cur:t"
+cursor: text;
+endsnippet
+
+snippet d "d"
+display: ${1};
+endsnippet
+
+snippet d:mib "d:mib"
+display: -moz-inline-box;
+endsnippet
+
+snippet d:mis "d:mis"
+display: -moz-inline-stack;
+endsnippet
+
+snippet d:b "d:b"
+display: block;
+endsnippet
+
+snippet d:cp "d:cp"
+display: compact;
+endsnippet
+
+snippet d:ib "d:ib"
+display: inline-block;
+endsnippet
+
+snippet d:itb "d:itb"
+display: inline-table;
+endsnippet
+
+snippet d:i "d:i"
+display: inline;
+endsnippet
+
+snippet d:li "d:li"
+display: list-item;
+endsnippet
+
+snippet d:n "d:n"
+display: none;
+endsnippet
+
+snippet d:ri "d:ri"
+display: run-in;
+endsnippet
+
+snippet d:tbcp "d:tbcp"
+display: table-caption;
+endsnippet
+
+snippet d:tbc "d:tbc"
+display: table-cell;
+endsnippet
+
+snippet d:tbclg "d:tbclg"
+display: table-column-group;
+endsnippet
+
+snippet d:tbcl "d:tbcl"
+display: table-column;
+endsnippet
+
+snippet d:tbfg "d:tbfg"
+display: table-footer-group;
+endsnippet
+
+snippet d:tbhg "d:tbhg"
+display: table-header-group;
+endsnippet
+
+snippet d:tbrg "d:tbrg"
+display: table-row-group;
+endsnippet
+
+snippet d:tbr "d:tbr"
+display: table-row;
+endsnippet
+
+snippet d:tb "d:tb"
+display: table;
+endsnippet
+
+snippet ec "ec"
+empty-cells: ${1};
+endsnippet
+
+snippet ec:h "ec:h"
+empty-cells: hide;
+endsnippet
+
+snippet ec:s "ec:s"
+empty-cells: show;
+endsnippet
+
+snippet exp "exp"
+expression()
+endsnippet
+
+snippet fl "fl"
+float: ${1};
+endsnippet
+
+snippet fl:l "fl:l"
+float: left;
+endsnippet
+
+snippet fl:n "fl:n"
+float: none;
+endsnippet
+
+snippet fl:r "fl:r"
+float: right;
+endsnippet
+
+snippet f+ "f+"
+font: ${1:1em} ${2:Arial},${3:sans-serif};
+endsnippet
+
+snippet fef "fef"
+font-effect: ${1};
+endsnippet
+
+snippet fef:eb "fef:eb"
+font-effect: emboss;
+endsnippet
+
+snippet fef:eg "fef:eg"
+font-effect: engrave;
+endsnippet
+
+snippet fef:n "fef:n"
+font-effect: none;
+endsnippet
+
+snippet fef:o "fef:o"
+font-effect: outline;
+endsnippet
+
+snippet femp "femp"
+font-emphasize-position: ${1};
+endsnippet
+
+snippet femp:a "femp:a"
+font-emphasize-position: after;
+endsnippet
+
+snippet femp:b "femp:b"
+font-emphasize-position: before;
+endsnippet
+
+snippet fems "fems"
+font-emphasize-style: ${1};
+endsnippet
+
+snippet fems:ac "fems:ac"
+font-emphasize-style: accent;
+endsnippet
+
+snippet fems:c "fems:c"
+font-emphasize-style: circle;
+endsnippet
+
+snippet fems:ds "fems:ds"
+font-emphasize-style: disc;
+endsnippet
+
+snippet fems:dt "fems:dt"
+font-emphasize-style: dot;
+endsnippet
+
+snippet fems:n "fems:n"
+font-emphasize-style: none;
+endsnippet
+
+snippet fem "fem"
+font-emphasize: ${1};
+endsnippet
+
+snippet ff "ff"
+font-family: ${1};
+endsnippet
+
+snippet ff:c "ff:c"
+font-family: ${1:'Monotype Corsiva','Comic Sans MS'},cursive;
+endsnippet
+
+snippet ff:f "ff:f"
+font-family: ${1:Capitals,Impact},fantasy;
+endsnippet
+
+snippet ff:m "ff:m"
+font-family: ${1:Monaco,'Courier New'},monospace;
+endsnippet
+
+snippet ff:ss "ff:ss"
+font-family: ${1:Helvetica,Arial},sans-serif;
+endsnippet
+
+snippet ff:s "ff:s"
+font-family: ${1:Georgia,'Times New Roman'},serif;
+endsnippet
+
+snippet fza "fza"
+font-size-adjust: ${1};
+endsnippet
+
+snippet fza:n "fza:n"
+font-size-adjust: none;
+endsnippet
+
+snippet fz "fz"
+font-size: ${1};
+endsnippet
+
+snippet fsm "fsm"
+font-smooth: ${1};
+endsnippet
+
+snippet fsm:aw "fsm:aw"
+font-smooth: always;
+endsnippet
+
+snippet fsm:a "fsm:a"
+font-smooth: auto;
+endsnippet
+
+snippet fsm:n "fsm:n"
+font-smooth: never;
+endsnippet
+
+snippet fst "fst"
+font-stretch: ${1};
+endsnippet
+
+snippet fst:c "fst:c"
+font-stretch: condensed;
+endsnippet
+
+snippet fst:e "fst:e"
+font-stretch: expanded;
+endsnippet
+
+snippet fst:ec "fst:ec"
+font-stretch: extra-condensed;
+endsnippet
+
+snippet fst:ee "fst:ee"
+font-stretch: extra-expanded;
+endsnippet
+
+snippet fst:n "fst:n"
+font-stretch: normal;
+endsnippet
+
+snippet fst:sc "fst:sc"
+font-stretch: semi-condensed;
+endsnippet
+
+snippet fst:se "fst:se"
+font-stretch: semi-expanded;
+endsnippet
+
+snippet fst:uc "fst:uc"
+font-stretch: ultra-condensed;
+endsnippet
+
+snippet fst:ue "fst:ue"
+font-stretch: ultra-expanded;
+endsnippet
+
+snippet fs "fs"
+font-style: ${1};
+endsnippet
+
+snippet fs:i "fs:i"
+font-style: italic;
+endsnippet
+
+snippet fs:n "fs:n"
+font-style: normal;
+endsnippet
+
+snippet fs:o "fs:o"
+font-style: oblique;
+endsnippet
+
+snippet fv "fv"
+font-variant: ${1};
+endsnippet
+
+snippet fv:n "fv:n"
+font-variant: normal;
+endsnippet
+
+snippet fv:sc "fv:sc"
+font-variant: small-caps;
+endsnippet
+
+snippet fw "fw"
+font-weight: ${1};
+endsnippet
+
+snippet fw:b "fw:b"
+font-weight: bold;
+endsnippet
+
+snippet fw:br "fw:br"
+font-weight: bolder;
+endsnippet
+
+snippet fw:lr "fw:lr"
+font-weight: lighter;
+endsnippet
+
+snippet fw:n "fw:n"
+font-weight: normal;
+endsnippet
+
+snippet f "f"
+font: ${1};
+endsnippet
+
+snippet h "h"
+height: ${1};
+endsnippet
+
+snippet h:a "h:a"
+height: auto;
+endsnippet
+
+snippet l "l"
+left: ${1};
+endsnippet
+
+snippet l:a "l:a"
+left: auto;
+endsnippet
+
+snippet lts "lts"
+letter-spacing: ${1};
+endsnippet
+
+snippet lh "lh"
+line-height: ${1};
+endsnippet
+
+snippet lisi "lisi"
+list-style-image: url(${1});
+endsnippet
+
+snippet lisi:n "lisi:n"
+list-style-image: none;
+endsnippet
+
+snippet lisp "lisp"
+list-style-position: ${1};
+endsnippet
+
+snippet lisp:i "lisp:i"
+list-style-position: inside;
+endsnippet
+
+snippet lisp:o "lisp:o"
+list-style-position: outside;
+endsnippet
+
+snippet list "list"
+list-style-type: ${1};
+endsnippet
+
+snippet list:c "list:c"
+list-style-type: circle;
+endsnippet
+
+snippet list:dclz "list:dclz"
+list-style-type: decimal-leading-zero;
+endsnippet
+
+snippet list:dc "list:dc"
+list-style-type: decimal;
+endsnippet
+
+snippet list:d "list:d"
+list-style-type: disc;
+endsnippet
+
+snippet list:lr "list:lr"
+list-style-type: lower-roman;
+endsnippet
+
+snippet list:n "list:n"
+list-style-type: none;
+endsnippet
+
+snippet list:s "list:s"
+list-style-type: square;
+endsnippet
+
+snippet list:ur "list:ur"
+list-style-type: upper-roman;
+endsnippet
+
+snippet lis "lis"
+list-style: ${1};
+endsnippet
+
+snippet lis:n "lis:n"
+list-style: none;
+endsnippet
+
+snippet mb "mb"
+margin-bottom: ${1};
+endsnippet
+
+snippet mb:a "mb:a"
+margin-bottom: auto;
+endsnippet
+
+snippet ml "ml"
+margin-left: ${1};
+endsnippet
+
+snippet ml:a "ml:a"
+margin-left: auto;
+endsnippet
+
+snippet mr "mr"
+margin-right: ${1};
+endsnippet
+
+snippet mr:a "mr:a"
+margin-right: auto;
+endsnippet
+
+snippet mt "mt"
+margin-top: ${1};
+endsnippet
+
+snippet mt:a "mt:a"
+margin-top: auto;
+endsnippet
+
+snippet m "m"
+margin: ${1};
+endsnippet
+
+snippet m:4 "m:4"
+margin: ${1:0} ${2:0} ${3:0} ${4:0};
+endsnippet
+
+snippet m:3 "m:3"
+margin: ${1:0} ${2:0} ${3:0};
+endsnippet
+
+snippet m:2 "m:2"
+margin: ${1:0} ${2:0};
+endsnippet
+
+snippet m:0 "m:0"
+margin: 0;
+endsnippet
+
+snippet m:a "m:a"
+margin: auto;
+endsnippet
+
+snippet mah "mah"
+max-height: ${1};
+endsnippet
+
+snippet mah:n "mah:n"
+max-height: none;
+endsnippet
+
+snippet maw "maw"
+max-width: ${1};
+endsnippet
+
+snippet maw:n "maw:n"
+max-width: none;
+endsnippet
+
+snippet mih "mih"
+min-height: ${1};
+endsnippet
+
+snippet miw "miw"
+min-width: ${1};
+endsnippet
+
+snippet op "op"
+opacity: ${1};
+endsnippet
+
+snippet op:ie "op:ie"
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:100});
+endsnippet
+
+snippet op:ms "op:ms"
+-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:100})';
+endsnippet
+
+snippet orp "orp"
+orphans: ${1};
+endsnippet
+
+snippet o+ "o+"
+outline: ${1:1px} ${2:solid} #${3:000};
+endsnippet
+
+snippet oc "oc"
+outline-color: ${1:#000};
+endsnippet
+
+snippet oc:i "oc:i"
+outline-color: invert;
+endsnippet
+
+snippet oo "oo"
+outline-offset: ${1};
+endsnippet
+
+snippet os "os"
+outline-style: ${1};
+endsnippet
+
+snippet ow "ow"
+outline-width: ${1};
+endsnippet
+
+snippet o "o"
+outline: ${1};
+endsnippet
+
+snippet o:n "o:n"
+outline: none;
+endsnippet
+
+snippet ovs "ovs"
+overflow-style: ${1};
+endsnippet
+
+snippet ovs:a "ovs:a"
+overflow-style: auto;
+endsnippet
+
+snippet ovs:mq "ovs:mq"
+overflow-style: marquee;
+endsnippet
+
+snippet ovs:mv "ovs:mv"
+overflow-style: move;
+endsnippet
+
+snippet ovs:p "ovs:p"
+overflow-style: panner;
+endsnippet
+
+snippet ovs:s "ovs:s"
+overflow-style: scrollbar;
+endsnippet
+
+snippet ovx "ovx"
+overflow-x: ${1};
+endsnippet
+
+snippet ovx:a "ovx:a"
+overflow-x: auto;
+endsnippet
+
+snippet ovx:h "ovx:h"
+overflow-x: hidden;
+endsnippet
+
+snippet ovx:s "ovx:s"
+overflow-x: scroll;
+endsnippet
+
+snippet ovx:v "ovx:v"
+overflow-x: visible;
+endsnippet
+
+snippet ovy "ovy"
+overflow-y: ${1};
+endsnippet
+
+snippet ovy:a "ovy:a"
+overflow-y: auto;
+endsnippet
+
+snippet ovy:h "ovy:h"
+overflow-y: hidden;
+endsnippet
+
+snippet ovy:s "ovy:s"
+overflow-y: scroll;
+endsnippet
+
+snippet ovy:v "ovy:v"
+overflow-y: visible;
+endsnippet
+
+snippet ov "ov"
+overflow: ${1};
+endsnippet
+
+snippet ov:a "ov:a"
+overflow: auto;
+endsnippet
+
+snippet ov:h "ov:h"
+overflow: hidden;
+endsnippet
+
+snippet ov:s "ov:s"
+overflow: scroll;
+endsnippet
+
+snippet ov:v "ov:v"
+overflow: visible;
+endsnippet
+
+snippet pb "pb"
+padding-bottom: ${1};
+endsnippet
+
+snippet pl "pl"
+padding-left: ${1};
+endsnippet
+
+snippet pr "pr"
+padding-right: ${1};
+endsnippet
+
+snippet pt "pt"
+padding-top: ${1};
+endsnippet
+
+snippet p "p"
+padding: ${1};
+endsnippet
+
+snippet p:4 "p:4"
+padding: ${1:0} ${2:0} ${3:0} ${4:0};
+endsnippet
+
+snippet p:3 "p:3"
+padding: ${1:0} ${2:0} ${3:0};
+endsnippet
+
+snippet p:2 "p:2"
+padding: ${1:0} ${2:0};
+endsnippet
+
+snippet p:0 "p:0"
+padding: 0;
+endsnippet
+
+snippet pgba "pgba"
+page-break-after: ${1};
+endsnippet
+
+snippet pgba:aw "pgba:aw"
+page-break-after: always;
+endsnippet
+
+snippet pgba:a "pgba:a"
+page-break-after: auto;
+endsnippet
+
+snippet pgba:l "pgba:l"
+page-break-after: left;
+endsnippet
+
+snippet pgba:r "pgba:r"
+page-break-after: right;
+endsnippet
+
+snippet pgbb "pgbb"
+page-break-before: ${1};
+endsnippet
+
+snippet pgbb:aw "pgbb:aw"
+page-break-before: always;
+endsnippet
+
+snippet pgbb:a "pgbb:a"
+page-break-before: auto;
+endsnippet
+
+snippet pgbb:l "pgbb:l"
+page-break-before: left;
+endsnippet
+
+snippet pgbb:r "pgbb:r"
+page-break-before: right;
+endsnippet
+
+snippet pgbi "pgbi"
+page-break-inside: ${1};
+endsnippet
+
+snippet pgbi:a "pgbi:a"
+page-break-inside: auto;
+endsnippet
+
+snippet pgbi:av "pgbi:av"
+page-break-inside: avoid;
+endsnippet
+
+snippet pos "pos"
+position: ${1};
+endsnippet
+
+snippet pos:a "pos:a"
+position: absolute;
+endsnippet
+
+snippet pos:f "pos:f"
+position: fixed;
+endsnippet
+
+snippet pos:r "pos:r"
+position: relative;
+endsnippet
+
+snippet pos:s "pos:s"
+position: static;
+endsnippet
+
+snippet q "q"
+quotes: ${1};
+endsnippet
+
+snippet q:en "q:en"
+quotes: '\201C' '\201D' '\2018' '\2019';
+endsnippet
+
+snippet q:n "q:n"
+quotes: none;
+endsnippet
+
+snippet q:ru "q:ru"
+quotes: '\00AB' '\00BB' '\201E' '\201C';
+endsnippet
+
+snippet rz "rz"
+resize: ${1};
+endsnippet
+
+snippet rz:b "rz:b"
+resize: both;
+endsnippet
+
+snippet rz:h "rz:h"
+resize: horizontal;
+endsnippet
+
+snippet rz:n "rz:n"
+resize: none;
+endsnippet
+
+snippet rz:v "rz:v"
+resize: vertical;
+endsnippet
+
+snippet r "r"
+right: ${1};
+endsnippet
+
+snippet r:a "r:a"
+right: auto;
+endsnippet
+
+snippet tbl "tbl"
+table-layout: ${1};
+endsnippet
+
+snippet tbl:a "tbl:a"
+table-layout: auto;
+endsnippet
+
+snippet tbl:f "tbl:f"
+table-layout: fixed;
+endsnippet
+
+snippet tal "tal"
+text-align-last: ${1};
+endsnippet
+
+snippet tal:a "tal:a"
+text-align-last: auto;
+endsnippet
+
+snippet tal:c "tal:c"
+text-align-last: center;
+endsnippet
+
+snippet tal:l "tal:l"
+text-align-last: left;
+endsnippet
+
+snippet tal:r "tal:r"
+text-align-last: right;
+endsnippet
+
+snippet ta "ta"
+text-align: ${1};
+endsnippet
+
+snippet ta:c "ta:c"
+text-align: center;
+endsnippet
+
+snippet ta:l "ta:l"
+text-align: left;
+endsnippet
+
+snippet ta:r "ta:r"
+text-align: right;
+endsnippet
+
+snippet td "td"
+text-decoration: ${1};
+endsnippet
+
+snippet td:l "td:l"
+text-decoration: line-through;
+endsnippet
+
+snippet td:n "td:n"
+text-decoration: none;
+endsnippet
+
+snippet td:o "td:o"
+text-decoration: overline;
+endsnippet
+
+snippet td:u "td:u"
+text-decoration: underline;
+endsnippet
+
+snippet te "te"
+text-emphasis: ${1};
+endsnippet
+
+snippet te:ac "te:ac"
+text-emphasis: accent;
+endsnippet
+
+snippet te:a "te:a"
+text-emphasis: after;
+endsnippet
+
+snippet te:b "te:b"
+text-emphasis: before;
+endsnippet
+
+snippet te:c "te:c"
+text-emphasis: circle;
+endsnippet
+
+snippet te:ds "te:ds"
+text-emphasis: disc;
+endsnippet
+
+snippet te:dt "te:dt"
+text-emphasis: dot;
+endsnippet
+
+snippet te:n "te:n"
+text-emphasis: none;
+endsnippet
+
+snippet th "th"
+text-height: ${1};
+endsnippet
+
+snippet th:a "th:a"
+text-height: auto;
+endsnippet
+
+snippet th:f "th:f"
+text-height: font-size;
+endsnippet
+
+snippet th:m "th:m"
+text-height: max-size;
+endsnippet
+
+snippet th:t "th:t"
+text-height: text-size;
+endsnippet
+
+snippet ti "ti"
+text-indent: ${1};
+endsnippet
+
+snippet ti:- "ti:-"
+text-indent: -9999px;
+endsnippet
+
+snippet tj "tj"
+text-justify: ${1};
+endsnippet
+
+snippet tj:a "tj:a"
+text-justify: auto;
+endsnippet
+
+snippet tj:d "tj:d"
+text-justify: distribute;
+endsnippet
+
+snippet tj:ic "tj:ic"
+text-justify: inter-cluster;
+endsnippet
+
+snippet tj:ii "tj:ii"
+text-justify: inter-ideograph;
+endsnippet
+
+snippet tj:iw "tj:iw"
+text-justify: inter-word;
+endsnippet
+
+snippet tj:k "tj:k"
+text-justify: kashida;
+endsnippet
+
+snippet tj:t "tj:t"
+text-justify: tibetan;
+endsnippet
+
+snippet to+ "to+"
+text-outline: ${1:0} ${2:0} #${3:000};
+endsnippet
+
+snippet to "to"
+text-outline: ${1};
+endsnippet
+
+snippet to:n "to:n"
+text-outline: none;
+endsnippet
+
+snippet tr "tr"
+text-replace: ${1};
+endsnippet
+
+snippet tr:n "tr:n"
+text-replace: none;
+endsnippet
+
+snippet tsh+ "tsh+"
+text-shadow: ${1:0} ${2:0} ${3:0} #${4:000};
+endsnippet
+
+snippet tsh "tsh"
+text-shadow: ${1};
+endsnippet
+
+snippet tsh:n "tsh:n"
+text-shadow: none;
+endsnippet
+
+snippet tt "tt"
+text-transform: ${1};
+endsnippet
+
+snippet tt:c "tt:c"
+text-transform: capitalize;
+endsnippet
+
+snippet tt:l "tt:l"
+text-transform: lowercase;
+endsnippet
+
+snippet tt:n "tt:n"
+text-transform: none;
+endsnippet
+
+snippet tt:u "tt:u"
+text-transform: uppercase;
+endsnippet
+
+snippet tw "tw"
+text-wrap: ${1};
+endsnippet
+
+snippet tw:no "tw:no"
+text-wrap: none;
+endsnippet
+
+snippet tw:n "tw:n"
+text-wrap: normal;
+endsnippet
+
+snippet tw:s "tw:s"
+text-wrap: suppress;
+endsnippet
+
+snippet tw:u "tw:u"
+text-wrap: unrestricted;
+endsnippet
+
+snippet t "t"
+top: ${1};
+endsnippet
+
+snippet t:a "t:a"
+top: auto;
+endsnippet
+
+snippet va "va"
+vertical-align: ${1};
+endsnippet
+
+snippet va:bl "va:bl"
+vertical-align: baseline;
+endsnippet
+
+snippet va:b "va:b"
+vertical-align: bottom;
+endsnippet
+
+snippet va:m "va:m"
+vertical-align: middle;
+endsnippet
+
+snippet va:sub "va:sub"
+vertical-align: sub;
+endsnippet
+
+snippet va:sup "va:sup"
+vertical-align: super;
+endsnippet
+
+snippet va:tb "va:tb"
+vertical-align: text-bottom;
+endsnippet
+
+snippet va:tt "va:tt"
+vertical-align: text-top;
+endsnippet
+
+snippet va:t "va:t"
+vertical-align: top;
+endsnippet
+
+snippet v "v"
+visibility: ${1};
+endsnippet
+
+snippet v:c "v:c"
+visibility: collapse;
+endsnippet
+
+snippet v:h "v:h"
+visibility: hidden;
+endsnippet
+
+snippet v:v "v:v"
+visibility: visible;
+endsnippet
+
+snippet whsc "whsc"
+white-space-collapse: ${1};
+endsnippet
+
+snippet whsc:ba "whsc:ba"
+white-space-collapse: break-all;
+endsnippet
+
+snippet whsc:bs "whsc:bs"
+white-space-collapse: break-strict;
+endsnippet
+
+snippet whsc:k "whsc:k"
+white-space-collapse: keep-all;
+endsnippet
+
+snippet whsc:l "whsc:l"
+white-space-collapse: loose;
+endsnippet
+
+snippet whsc:n "whsc:n"
+white-space-collapse: normal;
+endsnippet
+
+snippet whs "whs"
+white-space: ${1};
+endsnippet
+
+snippet whs:n "whs:n"
+white-space: normal;
+endsnippet
+
+snippet whs:nw "whs:nw"
+white-space: nowrap;
+endsnippet
+
+snippet whs:pl "whs:pl"
+white-space: pre-line;
+endsnippet
+
+snippet whs:pw "whs:pw"
+white-space: pre-wrap;
+endsnippet
+
+snippet whs:p "whs:p"
+white-space: pre;
+endsnippet
+
+snippet wid "wid"
+widows: ${1};
+endsnippet
+
+snippet w "w"
+width: ${1};
+endsnippet
+
+snippet w:a "w:a"
+width: auto;
+endsnippet
+
+snippet wob "wob"
+word-break: ${1};
+endsnippet
+
+snippet wob:ba "wob:ba"
+word-break: break-all;
+endsnippet
+
+snippet wob:bs "wob:bs"
+word-break: break-strict;
+endsnippet
+
+snippet wob:k "wob:k"
+word-break: keep-all;
+endsnippet
+
+snippet wob:l "wob:l"
+word-break: loose;
+endsnippet
+
+snippet wob:n "wob:n"
+word-break: normal;
+endsnippet
+
+snippet wos "wos"
+word-spacing: ${1};
+endsnippet
+
+snippet wow "wow"
+word-wrap: ${1};
+endsnippet
+
+snippet wow:no "wow:no"
+word-wrap: none;
+endsnippet
+
+snippet wow:n "wow:n"
+word-wrap: normal;
+endsnippet
+
+snippet wow:s "wow:s"
+word-wrap: suppress;
+endsnippet
+
+snippet wow:u "wow:u"
+word-wrap: unrestricted;
+endsnippet
+
+snippet z "z"
+z-index: ${1};
+endsnippet
+
+snippet z:a "z:a"
+z-index: auto;
+endsnippet
+
+snippet zoo "zoo"
+zoom: 1;
+endsnippet
+
+# vim:ft=snippets:

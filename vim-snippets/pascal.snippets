@@ -1,0 +1,86 @@
+snippet prog "basic program" !b
+Program ${1:program_name};
+${2:variable declaration}
+begin
+end.
+endsnippet
+
+snippet a "assign to a variable" w
+${1:x} := ${2:value};$0
+endsnippet
+
+snippet b "a block" w
+begin
+	${0}
+end${1:;}
+endsnippet
+
+snippet if "basic if" w
+if ${1:cond} then
+	${0}
+endsnippet
+
+snippet ife "if with else" w
+if ${1:cond} then
+	${2}
+else
+	${3}
+endsnippet
+
+snippet case "case statemend" w
+case ${1} of
+	$0
+end;
+endsnippet
+
+snippet : "case statemend possible valuew" w
+${1:val} : ${2:expr};$0
+endsnippet
+
+snippet for "for loop" w
+for ${1:var_assign} ${2:pas} ${3:var} do
+	$0
+endsnippet
+
+snippet while "while loop" w
+while ${1:cond} do
+	$0
+endsnippet
+
+snippet r "read" w
+read(${1});$0
+endsnippet
+
+snippet rl "readln" w
+readln(${1});$0
+endsnippet
+
+snippet w "write" w
+write(${1});$0
+endsnippet
+
+snippet wl "writeln" w
+writeln(${1});$0
+endsnippet
+
+snippet fun "a function" w
+function ${1:fun}(${2:params}):${3:type};
+	begin
+		$0
+	end;
+endsnippet
+
+snippet proc "a function" w
+procedure ${1:fun}(${2:params});
+	begin
+		$0
+	end;
+endsnippet
+
+snippet start "starter template" w
+begin
+	assign(input, 'input.txt');   reset(input);
+	assign(output, 'output.txt'); rewrite(output);
+	$0
+end.
+endsnippet
