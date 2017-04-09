@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -d "$1" ]; then
+    mysql -u root -e "DROP DATABASE wp_test_$1;"
+    rm -rf $1
+
+    # Close all php server instances
+    ps aux | grep php | awk '{print $2}' | xargs kill -9 &>/dev/null
+fi
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+branch_name=$(git symbolic-ref HEAD 2>/dev/null | cut -d"/" -f 3)
+echo $branch_name
+
+git checkout develop
+git merge --no-ff $branch_name
+
+if [[ ! ( $branch_name == "develop" || $branch_name == "master" ) ]]; then
+  git branch -d $branch_name
+fi
+
+git push
+

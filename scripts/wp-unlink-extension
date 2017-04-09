@@ -1,0 +1,4 @@
+cd $(git rev-parse --show-toplevel)
+
+rm -rf "$(wp-path)/wp-content/themes/ct/framework-customizations/extensions/$(basename $PWD)"
+

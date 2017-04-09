@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Close all php server instances
+ps aux | grep php | awk '{print $2}' | xargs kill -9 &>/dev/null
+
+

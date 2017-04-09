@@ -1,0 +1,2 @@
+wp eval 'echo ABSPATH;' | tail -n 1
+

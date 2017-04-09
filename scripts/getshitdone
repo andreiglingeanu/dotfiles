@@ -1,0 +1,80 @@
+#!/usr/bin/env zsh
+
+(($#<1)) && {
+    print -- "usage: ${0:t} (work|play)" >&2
+    exit 1;
+}
+
+action="$1"
+hostfile=/etc/hosts
+backupfile=$hostfile.orig
+blacklistedhostfile=$hostfile.blacklist
+
+blacklist=( 'reddit.com'
+    'forums.somethingawful.com'
+    'somethingawful.com'
+    'digg.com'
+    'break.com'
+    'news.ycombinator.com'
+    'infoq.com'
+    'bebo.com'
+    'twitter.com'
+    'facebook.com'
+    'fb.com'
+    'blip.com'
+    'youtube.com'
+    'vimeo.com'
+    'delicious.com'
+    'flickr.com'
+    'friendster.com'
+    'hi5.com'
+    'linkedin.com'
+    'livejournal.com'
+    'meetup.com'
+    'myspace.com'
+    'plurk.com'
+    'stickam.com'
+    'stumbleupon.com'
+    'yelp.com'
+    'ok.ru'
+    'vk.ru'
+    'vk.me'
+    'vk.com'
+    'slashdot.org' )
+
+function initialize() {
+    [[ ! -e $backupfile ]] && {
+        \cp $hostfile $backupfile
+    }
+    [[ ! -e $blacklistedhostfile ]] && {
+        \cp $hostfile $blacklistedhostfile
+        for site in $blacklist; do
+            print -- "127.0.0.1\t$site" 
+            print -- "127.0.0.1\twww.$site" 
+        done >> $blacklistedhostfile
+    }
+}
+
+function switch_hostfile() {
+case $action in
+    work)
+        \cp $blacklistedhostfile $hostfile
+        ;;
+    play|pause)
+        \cp $backupfile $hostfile
+        ;;
+    *) 
+        { 
+            print -- "I don't know this option: '$*'"
+            print -- "use ${0:t} work or ${0:t} play"
+            exit 1
+        } >&2
+esac
+}
+
+# create backupfile and blacklisted file
+initialize
+switch_hostfile
+sudo dscacheutil -flushcache
+
+
