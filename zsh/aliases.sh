@@ -98,7 +98,7 @@ alias gmf='git merge --no-ff'
 alias py='python3'
 
 # tmux
-alias tmux='tmux -2'
+alias t='tmux -2 new -s $(basename $(pwd))'
 
 # mysql
 alias mysqlroot='mysql -u root -p'
