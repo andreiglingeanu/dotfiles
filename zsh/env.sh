@@ -3,6 +3,10 @@ if [ -d "$HOME/bin" ] ; then
   PATH="$PATH:$HOME/bin"
 fi
 
+if [ -d "$ZSHA_BASE/scripts" ] ; then
+  PATH="$PATH:$ZSHA_BASE/scripts"
+fi
+
 if [ -d "$HOME/.linuxbrew/bin" ] ; then
   PATH="$PATH:$HOME/.linuxbrew/bin"
 fi

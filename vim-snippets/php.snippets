@@ -30,6 +30,10 @@ function my_action_callback() {
 }
 endsnippet
 
+# Use this every day
+# Relies on the fact that psysh is installed in my home dir
+# and on the fact that my current user is named andreiglingeanu, should refactor
+# this
 snippet debug "Description" !b
 require "/Users/andreiglingeanu/.composer/vendor/bin/psysh";
 \Psy\Shell::debug(get_defined_vars(), $this);
