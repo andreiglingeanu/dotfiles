@@ -27,7 +27,6 @@ setopt extended_glob
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="/Applications/Mozart2.app/Contents/Resources/bin:$PATH"
 
 export PKG_CONFIG_PATH="/opt/ImageMagick/lib/pkgconfig"
 export PKG_CONFIG_PATH=/usr/local/opt/imagemagick@6/lib/pkgconfig

@@ -129,6 +129,9 @@ alias apacurdirstop='sudo umount /var/www/html'
 # GDB
 alias gdb='gdb -quiet'
 
+# rails
+alias rails_migrate="rake db:migrate db:rollback && rake db:migrate"
+
 # Use vim cli mode
 bindkey '^P' up-history
 bindkey '^N' down-history
