@@ -1,6 +1,6 @@
 # setopt XTRACE VERBOSE
 
-ZSHA_BASE=$HOME/zsh-antigen
+ZSHA_BASE=$HOME/dotfiles
 
 autoload -U zmv
 
