@@ -12,6 +12,9 @@ ln -s .zsh-antigen/ruby/irbrc .irbrc
 ln -s .zsh-antigen/tmux.conf .tmux.conf
 ```
 
+VIM
+===
+
 Includes a library of vim snippets for the majestic
 [Ultisnips](https://github.com/SirVer/ultisnips) plugin, in the `vim-snippets`
 directory. Should be copied over (or symlinked) as `~/.vim/UltiSnips`
