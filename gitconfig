@@ -16,6 +16,7 @@
 	ra = !git r --all
 	l = "!. ~/.githelpers && pretty_git_log"
 	la = !git l --all
+	show-files = "!f() { git diff-tree --no-commit-id --name-only -r $1; }; f"
 [push]
 	default = matching
 
@@ -33,3 +34,5 @@
 	autosetuprebase = always
 [core]
 	excludesfile = ~/.gitignore
+[github]
+	user = andreiglingeanu

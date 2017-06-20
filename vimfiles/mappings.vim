@@ -19,7 +19,6 @@ nnoremap <leader>gf :CtrlP features<cr>
 """"""""""""""""""""""
 "  ruby test runner  "
 """"""""""""""""""""""
-
 " map <Leader>t :call RunCurrentSpecFile()<CR>
 " map <Leader>s :call RunNearestSpec()<CR>
 " map <Leader>l :call RunLastSpec()<CR>

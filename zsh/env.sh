@@ -43,9 +43,10 @@ export PATH=$HOME/bin:/opt/homebrew/bin:$HOME/.composer/vendor/bin:/usr/local/my
 export VMWWW=/Volumes/www/html
 export VMPHP=/Volumes/www/phpapps
 export EDITOR=vim
-export ANDROID_HOME=~/Development/sdk
-export PATH=$PATH:~/Development/sdk/platform-tools:~/Development/sdk/tools
-export PATH=$PATH:/usr/local/smlnj/bin
+
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 export GOPATH=$HOME/Go
 export GOROOT=/usr/local/opt/go/libexec

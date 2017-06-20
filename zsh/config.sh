@@ -30,3 +30,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 export PKG_CONFIG_PATH="/opt/ImageMagick/lib/pkgconfig"
 export PKG_CONFIG_PATH=/usr/local/opt/imagemagick@6/lib/pkgconfig
+
+# Opam
+$HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+# eval $(opam config env) - use that someday
+

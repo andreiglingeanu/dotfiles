@@ -6,6 +6,22 @@ snippet p "php" w
 $0
 endsnippet
 
+snippet fw_log "Description" w
+function fw_log() {
+	$args = func_get_args();
+	add_action( 'shutdown',
+		function () use ( $args ) {?>
+			<script>
+				<?php array_map( function ( $value ) {
+					?>console.log( <?= json_encode( $value ) ?> );
+				<?php }, $args) ?>
+			</script>
+		<?php } );
+}
+
+fw_log($0);
+endsnippet
+
 snippet ifndef "" !b
 if ( ! function_exists( '${1:function}' ) ) {
 	function $1($2) {
@@ -131,9 +147,9 @@ for ($${2:i} = 0; $$2 < ${1:count}; $$2${3:++}) {
 endsnippet
 
 snippet each "each html" w
-<? foreach(${1} as ${2}): ?>
+<?php foreach(${1} as ${2}): ?>
 	$0
-<? endforeach; ?>
+<?php endforeach; ?>
 endsnippet
 
 snippet eachk "each html" w

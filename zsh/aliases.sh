@@ -51,6 +51,10 @@ function zipr() {
   zip -r $1.zip $1
 }
 
+function ackvim () {
+	vim $(ack $1 -l)
+}
+
 function extract {
   echo Extracting $1 ...
   if [ -f $1 ] ; then

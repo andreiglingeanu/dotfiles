@@ -3,6 +3,7 @@
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
 " noremap <Leader>m :call UltiSnips_ListSnippets()<cr>
 autocmd! FileType php :UltiSnipsAddFiletypes php
 autocmd! FileType eruby :UltiSnipsAddFiletypes eruby
@@ -242,6 +243,30 @@ let g:vrc_show_command = 0
 """"""""""
 let g:flow#enable = 0
 let g:flow#flowpath = "/Users/andreiglingeanu/.nvm/versions/node/v7.7.3/bin/flow"
+let g:flow#omnifunc = 1
 
+autocmd FileType javascript :setl omnifunc=flowcomplete#Complete
 
+""""""""""""
+"  ferret  "
+""""""""""""
+" let g:FerretMap = 0
+
+""""""""""""""
+"  startify  "
+""""""""""""""
+let g:startify_bookmarks = [ {'g': '~/gists_to_save'} ]
+
+""""""""""""""
+"  prettier  "
+""""""""""""""
+
+" number of spaces per indentation level
+let g:prettier#config#tab_width = 4
+
+" use tabs over spaces
+let g:prettier#config#use_tabs = 'true'
+let g:prettier#exec_cmd_async = 1
+let g:prettier#autoformat = 0
+let g:prettier#config#bracket_spacing = 'true'
 
