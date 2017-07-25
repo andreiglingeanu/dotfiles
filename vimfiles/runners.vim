@@ -46,6 +46,9 @@ augroup runners
         \ command! -nargs=* -complete=file -bar Runner ! clear && php %
 
   autocmd FileType php
+        \ command! -nargs=* -complete=file -bar Prettier !php-cs-fixer fix % --config=/Users/andreiglingeanu/dotfiles/php_cs
+
+  autocmd FileType php
         \ command! -nargs=* -complete=file -bar RunnerRepl ! clear && psysh %
 
   autocmd! FileType pascal
