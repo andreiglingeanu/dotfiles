@@ -15,6 +15,7 @@ source ~/dotfiles/vimfiles/statusline.vim
 source ~/dotfiles/vimfiles/mappings.vim
 source ~/dotfiles/vimfiles/plugins_config.vim
 source ~/dotfiles/vimfiles/launchers.vim
+source ~/dotfiles/vimfiles/terminal.vim
 
 runtime macros/matchit.vim
 

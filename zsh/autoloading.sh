@@ -34,7 +34,7 @@ group_lazy_load() {
 #  NVM  #
 #########
 export NVM_DIR=~/.nvm
-group_lazy_load $HOME/.nvm/nvm.sh nvm node npm gulp vue yarn flow react-native node-debug node-inspector
+group_lazy_load $HOME/.nvm/nvm.sh nvm node npm npx gulp vue yarn flow react-native node-debug node-inspector 
 
 ##########
 #  ruby  #
@@ -44,7 +44,7 @@ group_lazy_load $ZSHA_BASE/autoloads/rbenv.sh rbenv ruby rails irb cap rake bund
 #################
 #  php-version  #
 #################
-group_lazy_load $ZSHA_BASE/autoloads/php-version.sh php-version php wp unyson-testing unyson-testing-drop
+group_lazy_load $ZSHA_BASE/autoloads/php-version.sh php-version php wp unyson-testing unyson-testing-drop psysh
 
 
 

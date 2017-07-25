@@ -15,6 +15,7 @@ Plugin 'mgutz/vim-colors'
 " Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-rbenv'
 Plugin 'StanAngeloff/php.vim'
+
 " Awesome rails.vim
 Plugin 'tpope/vim-rails'
 Plugin 'vim-scripts/TailMinusF'
@@ -102,10 +103,14 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plugin 't9md/vim-ruby-xmpfilter'
 Plugin 'editorconfig/editorconfig-vim'
+
 Plugin 'Shougo/unite.vim'
 Plugin 'ujihisa/unite-colorscheme'
+
 Plugin 'Shougo/vimproc.vim'
+" Plugin 'Shougo/denite.nvim'
 Plugin 'Shougo/vimfiler.vim'
+Plugin 'tpope/vim-rhubarb'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'dbakker/vim-projectroot'
 Plugin 'terryma/vim-expand-region'
@@ -124,10 +129,11 @@ Plugin 'flowtype/vim-flow'
 " Plugin 'vim-syntastic/syntastic'
 " Plugin 'dodie/vim-disapprove-deep-indentation'
 Plugin 'lambdalisue/vim-gista'
-Plugin 'mhinz/vim-startify'
 Plugin 'vim-scripts/oz.vim'
 Plugin 'jparise/vim-graphql'
 Plugin 'mitermayer/vim-prettier'
+Plugin 'splattael/rufo-vim'
+Plugin 'machakann/vim-highlightedyank'
 
 " End list of plugin
 call vundle#end()

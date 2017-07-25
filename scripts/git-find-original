@@ -1,0 +1,44 @@
+#!/bin/bash
+# USAGE:
+# reason for this is because sometimes you want to know when the originating code/comment/whatever was brought into the repo
+# but you end up following a trace of lots of commits that just moved around the original chunk of code.
+# this uses git bisect to trace back to the original commit that has this text in the repo.
+# depends on ack, but you could easily change this to use `grep -r`
+#
+# $ git-find-original "some search string that you want to find the original commit that had this exact text"
+
+match_arg="$@"
+
+continue_bisect() {
+  previous_commit=$1
+  current_commit=$(git rev-list HEAD |head -1)
+
+  if [ "$previous_commit" = "$current_commit" ]; then
+    # we've reached the commit we want
+    echo
+    echo "============================================="
+    echo "run a git show or what have you. you're here."
+    echo "============================================="
+    echo
+    return
+  fi
+
+  ack "$match_arg"
+  ret=$?
+
+  # successful ack, we want to mark as bad, continue until we do
+  # not find any match, and then mark it good
+  if [ $ret -eq 0 ]; then
+    git bisect bad
+    continue_bisect $current_commit
+  else
+    git bisect good
+    continue_bisect $current_commit
+  fi
+}
+
+initial_commit=$(git rev-list HEAD | tail -n 1)
+
+git bisect start
+git bisect good $initial_commit
+continue_bisect

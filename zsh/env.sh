@@ -27,8 +27,8 @@ if [ -d "$HOME/Dropbox/bin/wp-cli/bin" ] ; then
   PATH="$PATH:$HOME/Dropbox/bin/wp-cli/bin"
 fi
 
-if [ -d "$HOME/Dropbox/Projects/full/wp" ]; then
-  export WP_DEVELOP_DIR="$HOME/Dropbox/Projects/full/wp/"
+if [ -d "$HOME/Projects/full/wp" ]; then
+  export WP_DEVELOP_DIR="$HOME/Projects/full/wp/"
 fi
 
 # export WP_DEVELOP_THEME_NAME="ct"

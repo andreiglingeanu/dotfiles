@@ -112,10 +112,10 @@ function mysqldb() {
 }
 
 # Editor
-alias e='vim'
+alias e='nvim'
 
 # alias vim='/usr/local/bin/vim' # switch vim to the brew's one
-alias v='vim'
+alias v='nvim'
 
 # Apache
 alias apar='sudo /etc/init.d/apache2 restart'

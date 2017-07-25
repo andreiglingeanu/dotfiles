@@ -18,6 +18,11 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+" Preview of subs in neovim
+if has('nvim') 
+  set inccommand=split
+endif
+
 " round scrollign to a multiple of shiftwidth
 set shiftround
 " show search match

@@ -171,34 +171,34 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 """""""""""
 "  unite  "
 """""""""""
-   let s:filters = {
-   \   "name" : "preferred_unite_output",
-   \}
-   function! s:filters.filter(candidates, context)
-      for candidate in a:candidates
-         let bufname = bufname(candidate.action__buffer_nr)
-         let filename = fnamemodify(bufname, ':p:t')
-         let path = fnamemodify(bufname, ':p:h')
+   " let s:filters = {
+   " \   "name" : "preferred_unite_output",
+   " \}
+   " function! s:filters.filter(candidates, context)
+   "    for candidate in a:candidates
+   "       let bufname = bufname(candidate.action__buffer_nr)
+   "       let filename = fnamemodify(bufname, ':p:t')
+   "       let path = fnamemodify(bufname, ':p:h')
 
-         " Customize output format.
-         let candidate.abbr = printf("[%s] %s\\%s", filename, path, filename)
-      endfor
-      return a:candidates
-   endfunction
+   "       " Customize output format.
+   "       let candidate.abbr = printf("[%s] %s\\%s", filename, path, filename)
+   "    endfor
+   "    return a:candidates
+   " endfunction
 
-   call unite#custom#source('buffer', 'converters', 'preferred_unite_output')
+   " call unite#custom#source('buffer', 'converters', 'preferred_unite_output')
 
-    let g:unite_source_codesearch_ignore_case = 1
-    call unite#filters#matcher_default#use(['matcher_fuzzy'])
-    call unite#custom#source('file,file/new,file_mru,buffer,file_rec',
-    \ 'matchers', 'matcher_fuzzy')
-    let g:unite_data_directory='~/.vim/.cache/unite'
-    let g:unite_source_history_yank_enable=1
-    if executable('ag')
-        let g:unite_source_grep_command = 'ag'
-        let g:unite_source_grep_default_opts='-i -r --line-numbers --nocolor --nogroup -S'
-        let g:unite_source_grep_recursive_opt = ''
-    endif
+   "  let g:unite_source_codesearch_ignore_case = 1
+   "  call unite#filters#matcher_default#use(['matcher_fuzzy'])
+   "  call unite#custom#source('file,file/new,file_mru,buffer,file_rec',
+   "  \ 'matchers', 'matcher_fuzzy')
+   "  let g:unite_data_directory='~/.vim/.cache/unite'
+   "  let g:unite_source_history_yank_enable=1
+   "  if executable('ag')
+   "      let g:unite_source_grep_command = 'ag'
+   "      let g:unite_source_grep_default_opts='-i -r --line-numbers --nocolor --nogroup -S'
+   "      let g:unite_source_grep_recursive_opt = ''
+   "  endif
 
 
 " nnoremap <c-k> :Unite file file_rec buffer<cr>
@@ -266,6 +266,7 @@ let g:prettier#config#tab_width = 4
 
 " use tabs over spaces
 let g:prettier#config#use_tabs = 'true'
+let g:prettier#config#trailing_comma = 'es5'
 let g:prettier#exec_cmd_async = 1
 let g:prettier#autoformat = 0
 let g:prettier#config#bracket_spacing = 'true'
