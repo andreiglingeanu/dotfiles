@@ -1,6 +1,7 @@
 [user]
 	email = andrei.glingeanu@gmail.com
 	name = Andrei Glingeanu
+	signingkey = 11BF03F217F07E0B
 [alias]
 	# Fancy logging.
 	#   h = head
@@ -36,3 +37,7 @@
 	excludesfile = ~/.gitignore
 [github]
 	user = andreiglingeanu
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true

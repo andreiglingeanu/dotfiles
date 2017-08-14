@@ -52,3 +52,7 @@ export GOPATH=$HOME/Go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+export GPG_TTY=$(tty)
+
+
