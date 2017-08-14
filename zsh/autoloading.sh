@@ -39,12 +39,12 @@ group_lazy_load $HOME/.nvm/nvm.sh nvm node npm npx gulp vue yarn flow react-nati
 ##########
 #  ruby  #
 ##########
-group_lazy_load $ZSHA_BASE/autoloads/rbenv.sh rbenv ruby rails irb cap rake bundle sidekiq
+group_lazy_load $ZSHA_BASE/autoloads/rbenv.sh rbenv ruby rails irb cap rake bundle sidekiq foreman
 
 #################
 #  php-version  #
 #################
-group_lazy_load $ZSHA_BASE/autoloads/php-version.sh php-version php wp unyson-testing unyson-testing-drop psysh
+group_lazy_load $ZSHA_BASE/autoloads/php-version.sh php-version php wp unyson-testing wordpress-drop wordpress-empty psysh
 
 
 

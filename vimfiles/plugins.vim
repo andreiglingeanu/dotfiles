@@ -134,6 +134,8 @@ Plugin 'jparise/vim-graphql'
 Plugin 'mitermayer/vim-prettier'
 Plugin 'splattael/rufo-vim'
 Plugin 'machakann/vim-highlightedyank'
+Plugin 'johngrib/vim-game-code-break'
+Plugin 'AndrewRadev/switch.vim'
 
 " End list of plugin
 call vundle#end()
