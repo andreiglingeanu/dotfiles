@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+# USAGE: empty-wordpress
+#
+# Some steps may not be required for you. You welcome to fork the gist
+# and make it the way you like it.
+#
+
+# Install fresh wordpress with unyson
+
+mkdir $1
+cd $1
+
+echo "path: $(pwd)" > wp-cli.yml
+
+wp core download
+
+# Please note that you'll have to check that you don't repeat your db name
+mysql -u root -e "CREATE DATABASE wp_test_$1 CHARACTER SET utf8 COLLATE utf8_bin;"
+
+wp core config --dbname=wp_test_$1 --dbuser=root --dbpass="" --extra-php <<PHP
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+PHP
+
+wp core install --title="Happy debugging!" --admin_user="admin" --admin_password="123" --admin_email="email@email.com" --skip-email --url="http://0.0.0.0:3005/"
+
+ps aux | grep php | awk '{print $2}' | xargs kill -9 &>/dev/null
+wp server
+
+
+
