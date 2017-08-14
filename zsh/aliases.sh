@@ -172,3 +172,7 @@ alias bss='brew services start $@'
 alias bst='brew services stop $@'
 alias bsl='brew services list'
 
+
+cv() {
+  cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
+}

@@ -1,20 +1,10 @@
 <?php
 
-/**
- * @author     Creative Themes
- * @copyright  2017 Creative Themes
- * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License
- *
- * @link       http://creativethemes.com/
- */
-
 $header = <<<'EOF'
-@package    Creative Themes
-@subpackage Template
 @author     Creative Themes
 @copyright  2017 Creative Themes
 @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License
-@link       http://creativethemes.com/
+@link       https://creativethemes.com/
 EOF;
 
 return PhpCsFixer\Config::create()
@@ -30,14 +20,19 @@ return PhpCsFixer\Config::create()
 		'combine_consecutive_unsets' => true,
 		// one should use PHPUnit methods to set up expected exception instead of annotations
 		'general_phpdoc_annotation_remove' => ['expectedException', 'expectedExceptionMessage', 'expectedExceptionMessageRegExp'],
+		/*
 		'header_comment' => [
 			'commentType' => 'PHPDoc',
 			'header' => $header,
 		],
-		'heredoc_to_nowdoc' => true,
+		 */
+		// 'heredoc_to_nowdoc' => true,
 		'list_syntax' => ['syntax' => 'long'],
 		'method_argument_space' => ['ensure_fully_multiline' => true],
 		'no_extra_consecutive_blank_lines' => ['break', 'continue', 'extra', 'return', 'throw', 'use', 'parenthesis_brace_block', 'square_brace_block', 'curly_brace_block'],
+		'concat_space' => array(
+			'spacing' => 'one'
+		),
 		'braces' => array(
 			'position_after_control_structures' => 'same',
 			'position_after_functions_and_oop_constructs' => 'same',
