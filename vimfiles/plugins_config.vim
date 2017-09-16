@@ -272,6 +272,6 @@ let g:prettier#autoformat = 0
 let g:prettier#config#bracket_spacing = 'true'
 
 " Maybe get rid of that when I switch to regular day-to-day stuff
-let g:prettier#config#parser = 'babylon'
+" let g:prettier#config#parser = 'babylon'
 
 
