@@ -55,4 +55,7 @@ export PATH=$PATH:$GOROOT/bin
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 export GPG_TTY=$(tty)
 
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+
 

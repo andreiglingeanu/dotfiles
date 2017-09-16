@@ -116,6 +116,8 @@ command! OpenChangedFiles :call OpenChangedFiles()
 
 command! CopyFilePath :let @+ = expand("%")
 
+" command! FetchAndPut :%!curl -s $(pbpaste)<cr>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FindConditionals COMMAND
 " Start a search for conditional branches, both implicit and explicit
