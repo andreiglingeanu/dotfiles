@@ -16,6 +16,7 @@ alias generate_secure_password='openssl passwd -1 "plaintextpassword"'
 alias generate_tags='ag -l | ctags --links=no -L-'
 
 alias wk="cd /Users/andreiglingeanu/Projects/full && clear && echo 'do your work, motherfucker'"
+alias trash="cd /Users/andreiglingeanu/Projects/trash && clear && echo 'try stuff'"
 
 
 alias ls="ls -G"
@@ -103,6 +104,12 @@ alias py='python3'
 
 # tmux
 alias t='tmux -2 new -s $(basename $(pwd))'
+
+function tt () {
+	mkdir $1
+	cd $1
+	tmux -2 new -s $(basename $(pwd));
+}
 
 # mysql
 alias mysqlroot='mysql -u root -p'
