@@ -15,8 +15,8 @@ alias vg='vagrant'
 alias generate_secure_password='openssl passwd -1 "plaintextpassword"'
 alias generate_tags='ag -l | ctags --links=no -L-'
 
-alias wk="cd /Users/andreiglingeanu/Projects/full && clear && echo 'do your work, motherfucker'"
-alias trash="cd /Users/andreiglingeanu/Projects/trash && clear && echo 'try stuff'"
+alias wk="cd ~/Projects/full && clear && echo 'do your work, motherfucker'"
+alias trash="cd ~/Projects/trash && clear && echo 'try stuff'"
 
 
 alias ls="ls -G"

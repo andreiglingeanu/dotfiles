@@ -35,3 +35,10 @@ export PKG_CONFIG_PATH=/usr/local/opt/imagemagick@6/lib/pkgconfig
 $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 # eval $(opam config env) - use that someday
 
+if [ -d /home/linuxbrew ]; then
+	export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+	export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+	export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+
+	PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
