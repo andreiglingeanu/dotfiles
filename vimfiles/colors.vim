@@ -4,7 +4,8 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 set background=dark
 if !has("gui_running")
-  colorscheme solarized8_dark_high
+  " colorscheme solarized8_dark_high
+  colorscheme desert
 
   " let g:solarized_termcolors=256
   " colorscheme t256
