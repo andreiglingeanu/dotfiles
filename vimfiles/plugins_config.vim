@@ -266,10 +266,11 @@ let g:prettier#config#tab_width = 4
 
 " use tabs over spaces
 let g:prettier#config#use_tabs = 'true'
+let g:prettier#config#semi = 'false'
 let g:prettier#config#trailing_comma = 'es5'
 let g:prettier#exec_cmd_async = 1
 let g:prettier#autoformat = 0
-let g:prettier#config#bracket_spacing = 'true'
+let g:prettier#config#bracket_spacing = 'false'
 
 " Maybe get rid of that when I switch to regular day-to-day stuff
 " let g:prettier#config#parser = 'babylon'

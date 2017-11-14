@@ -7,6 +7,7 @@ autoload -U zmv
 source $ZSHA_BASE/zsh/env.sh
 source $ZSHA_BASE/zsh/config.sh
 source $ZSHA_BASE/zsh/theme.zsh
+source $ZSHA_BASE/zsh/completions.sh
 
 source <(antibody init)
 
@@ -41,3 +42,6 @@ bindkey -e
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/andreiglingeanu/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/andreiglingeanu/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for yarn package
+# uninstall by removing these lines or running `tabtab uninstall yarn`
+[[ -f /Users/andreiglingeanu/.nvm/versions/node/v8.4.0/lib/node_modules/yarn-completions/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/andreiglingeanu/.nvm/versions/node/v8.4.0/lib/node_modules/yarn-completions/node_modules/tabtab/.completions/yarn.zsh

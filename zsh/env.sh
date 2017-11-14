@@ -31,6 +31,18 @@ if [ -d "$HOME/Projects/full/wp" ]; then
   export WP_DEVELOP_DIR="$HOME/Projects/full/wp/"
 fi
 
+if [ -d "/Applications/DB Browser for SQLite.app/Contents/MacOS" ]; then
+  export PATH="$PATH:/Applications/DB Browser for SQLite.app/Contents/MacOS"
+fi
+
+if [ -f "$HOME/bin/google-cloud-sdk/completion.zsh.inc" ]; then
+	source "$HOME/bin/google-cloud-sdk/completion.zsh.inc"
+fi
+
+if [ -f "$HOME/bin/google-cloud-sdk/path.zsh.inc" ]; then
+	source "$HOME/bin/google-cloud-sdk/path.zsh.inc"
+fi
+
 # export WP_DEVELOP_THEME_NAME="ct"
 
 export WP_TESTS_DIR=/tmp/wordpress-tests-lib/
@@ -42,7 +54,7 @@ export CDPATH=$CDPATH:$HOME/Sites:$HOME
 export PATH=$HOME/bin:/opt/homebrew/bin:$HOME/.composer/vendor/bin:/usr/local/mysql/bin:$PATH
 export VMWWW=/Volumes/www/html
 export VMPHP=/Volumes/www/phpapps
-export EDITOR=vim
+export EDITOR=nvim
 
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
