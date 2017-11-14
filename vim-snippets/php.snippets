@@ -52,6 +52,11 @@ endsnippet
 # this
 snippet debug "Description" !b
 require "/Users/andreiglingeanu/.composer/vendor/bin/psysh";
+\Psy\Shell::debug(get_defined_vars());
+endsnippet
+
+snippet debugt "Description" !b
+require "/Users/andreiglingeanu/.composer/vendor/bin/psysh";
 \Psy\Shell::debug(get_defined_vars(), $this);
 endsnippet
 
@@ -223,7 +228,7 @@ snippet getter "PHP Class Getter" !b
 /*
  * Getter for $1
  */
-public function get${1/\w+\s*/\u$0/}() 
+public function get${1/\w+\s*/\u$0/}()
 {
     return $this->$1;$2
 }
@@ -248,7 +253,7 @@ protected $$1
 /*
  * Getter for $1
  */
-public function get${1/\w+\s*/\u$0/}() 
+public function get${1/\w+\s*/\u$0/}()
 {
     return $this->$1;$2
 }
@@ -342,7 +347,7 @@ endsnippet
 
 snippet class "Class declaration template" !b
 /**
- * Class ${1:`!p snip.rv=snip.fn.capitalize().split('.')[0]`} 
+ * Class ${1:`!p snip.rv=snip.fn.capitalize().split('.')[0]`}
  */
 class $2
 {
@@ -356,7 +361,7 @@ endsnippet
 
 snippet classe "Class declaration template with inheritance" !b
 /**
- * Class ${1:`!p snip.rv=snip.fn.capitalize().split('.')[0]`} 
+ * Class ${1:`!p snip.rv=snip.fn.capitalize().split('.')[0]`}
  */
 class ${2:Class} extends ${3:BaseClass}
 {

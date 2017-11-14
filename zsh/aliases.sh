@@ -1,7 +1,7 @@
 # Utility
 alias reload='source ~/.zshrc'
 alias ea="v $ZSHA_BASE/zsh/aliases.sh && reload" # Edit aliases
-alias edit_secrets="vim ~/Dropbox/bin/login_aliases.sh && reload"
+alias edit_secrets="v ~/Dropbox/bin/login_aliases.sh && reload"
 
 alias ec="v $ZSHA_BASE/zsh/config.sh && reload" # Edit config
 alias ev="v $ZSHA_BASE/zsh/env.sh && reload" # Edit environment specific vars
@@ -21,7 +21,10 @@ alias trash="cd ~/Projects/trash && clear && echo 'try stuff'"
 
 alias ls="ls -G"
 
-alias editini="vim /usr/local/etc/php/5.6/php.ini"
+function editini {
+	nvim `php --ini |  tail -n 3 | head -n 1 | awk '{ print $4 }'`
+}
+
 alias mamp="cd /Applications/MAMP/htdocs/"
 
 # copy & paste utilities
