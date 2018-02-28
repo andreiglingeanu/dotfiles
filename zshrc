@@ -45,3 +45,5 @@ bindkey -e
 # tabtab source for yarn package
 # uninstall by removing these lines or running `tabtab uninstall yarn`
 [[ -f /Users/andreiglingeanu/.nvm/versions/node/v8.4.0/lib/node_modules/yarn-completions/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/andreiglingeanu/.nvm/versions/node/v8.4.0/lib/node_modules/yarn-completions/node_modules/tabtab/.completions/yarn.zsh
+
+export PATH=/Users/andreiglingeanu/.local/bin/luna-studio:$PATH

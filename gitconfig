@@ -19,7 +19,7 @@
 	la = !git l --all
 	show-files = "!f() { git diff-tree --no-commit-id --name-only -r $1; }; f"
 [push]
-	default = matching
+	default = simple
 
 # vim:ft=gitconfig:
 [diff]
@@ -40,4 +40,4 @@
 [gpg]
 	program = gpg
 [commit]
-	gpgsign = true
+    gpgsign = true

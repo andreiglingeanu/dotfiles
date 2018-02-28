@@ -47,6 +47,7 @@ fi
 
 export WP_TESTS_DIR=/tmp/wordpress-tests-lib/
 
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 export LANG=ru_RU.UTF-8
 
@@ -70,4 +71,5 @@ export GPG_TTY=$(tty)
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 
+export PHP_VERSIONS="/usr/local/"
 
