@@ -143,6 +143,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'ElmCast/elm-vim'
 Plugin 'wavded/vim-stylus'
 Plugin 'jwalton512/vim-blade'
+Plugin 'Galooshi/vim-import-js'
 
 " End list of plugin
 call vundle#end()

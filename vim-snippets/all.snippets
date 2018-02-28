@@ -80,6 +80,19 @@ def make_box(twidth, bwidth=None):
     eline = i + 2 * m + bwidth_inner * m + m + e
     return sline, mlines, mlinee, eline
 
+def make_license_box(twidth, bwidth=None):
+    b, m, e, i = _get_comment_format()
+    bwidth_inner = 1
+    sline = b + bwidth_inner * m
+    nspaces = (bwidth_inner - twidth) // 2
+    mlines = i + m + " " + " " * nspaces
+    mlinee = ""
+    eline = i + m + "\n" + i + m + " @copyright 2017-present Creative Themes\n"
+    eline += i + m + " @license   http://www.gnu.org/copyleft/gpl.html GNU General Public License\n"
+    eline += i + e
+
+    return sline, mlines, mlinee, eline
+
 def foldmarker():
     "Return a tuple of (open fold marker, close fold marker)"
     return vim.eval("&foldmarker").split(",")
@@ -137,6 +150,15 @@ endsnippet
 
 snippet limg "lorem" w
 http://lorempixel.com/${1:100}/${2:100}
+endsnippet
+
+snippet ctlic "License for creative themes files" !b
+`!p
+box = make_license_box(len(t[1]), 1)
+snip.rv = box[0] + '\n' + box[1]
+`${1:`!p snip.rv=snip.fn.capitalize().split('.')[0]`}`!p
+box = make_license_box(len(t[1]), 1)
+snip.rv = box[2] + '\n' + box[3]`$0
 endsnippet
 
 # vim:ft=snippets:

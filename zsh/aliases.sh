@@ -19,6 +19,11 @@ alias wk="cd ~/Projects/full && clear && echo 'do your work, motherfucker'"
 alias trash="cd ~/Projects/trash && clear && echo 'try stuff'"
 
 
+function crx() {
+  /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --pack-extension=$@ --pack-extension-key=$@/key.pem
+}
+
+
 alias ls="ls -G"
 
 function editini {
@@ -126,6 +131,7 @@ alias e='nvim'
 
 # alias vim='/usr/local/bin/vim' # switch vim to the brew's one
 alias v='nvim'
+alias vempty='nvim -u NONE'
 
 # Apache
 alias apar='sudo /etc/init.d/apache2 restart'
