@@ -4,4 +4,5 @@ killall ruby
 kill-all-php-servers
 brew services list | sed -e '1d' | awk '{print $1}' | xargs -n1 brew services stop
 killall tmux
+ps -aux | grep tmux | awk '{ print $2 }' | xargs kill -9
 

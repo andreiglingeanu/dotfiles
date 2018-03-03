@@ -39,6 +39,10 @@ if [ -f "$HOME/bin/google-cloud-sdk/completion.zsh.inc" ]; then
 	source "$HOME/bin/google-cloud-sdk/completion.zsh.inc"
 fi
 
+# if [ -d "/home/linuxbrew/.linuxbrew/bin" ]; then
+	# export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+# fi
+
 if [ -f "$HOME/bin/google-cloud-sdk/path.zsh.inc" ]; then
 	source "$HOME/bin/google-cloud-sdk/path.zsh.inc"
 fi

@@ -39,7 +39,8 @@ group_lazy_load $HOME/.nvm/nvm.sh nvm node npm npx gulp vue yarn flow react-nati
 ##########
 #  ruby  #
 ##########
-group_lazy_load $ZSHA_BASE/autoloads/rbenv.sh rbenv ruby rails irb cap rake bundle sidekiq foreman
+# group_lazy_load $ZSHA_BASE/autoloads/rbenv.sh rbenv ruby rails irb cap rake bundle sidekiq foreman
+. $ZSHA_BASE/autoloads/rbenv.sh
 
 #################
 #  php-version  #
