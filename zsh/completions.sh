@@ -62,3 +62,7 @@ _artisan () {
 compdef _artisan php artisan
 compdef _artisan artisan
 
+if [ -f "$HOME/.asdf/completions/asdf.bash" ]; then
+	. $HOME/.asdf/completions/asdf.bash
+fi
+
