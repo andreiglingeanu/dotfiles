@@ -40,7 +40,7 @@ if [ -f "$HOME/bin/google-cloud-sdk/completion.zsh.inc" ]; then
 fi
 
 if [ -f "$HOME/.asdf/asdf.sh" ]; then
-	. $HOME/.asdf/asdf.sh
+	# . $HOME/.asdf/asdf.sh
 fi
 
 # if [ -d "/home/linuxbrew/.linuxbrew/bin" ]; then
