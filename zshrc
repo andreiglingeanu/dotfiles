@@ -47,3 +47,7 @@ bindkey -e
 [[ -f /Users/andreiglingeanu/.nvm/versions/node/v8.4.0/lib/node_modules/yarn-completions/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/andreiglingeanu/.nvm/versions/node/v8.4.0/lib/node_modules/yarn-completions/node_modules/tabtab/.completions/yarn.zsh
 
 export PATH=/Users/andreiglingeanu/.local/bin/luna-studio:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
