@@ -2,7 +2,7 @@ server:
   port: 3004
   host: 0.0.0.0
 
-require: /home/andreiglingeanu/.composer/vendor/autoload.php
+require: /home/andreiglingeanu/.config/composer/vendor/autoload.php
 
 # TODO: configure default wp PATH after install
 path: /home/andreiglingeanu/Projects/full/wp
