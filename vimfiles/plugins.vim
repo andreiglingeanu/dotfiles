@@ -144,6 +144,7 @@ Plugin 'ElmCast/elm-vim'
 Plugin 'wavded/vim-stylus'
 Plugin 'jwalton512/vim-blade'
 Plugin 'Galooshi/vim-import-js'
+Plugin 'junegunn/goyo.vim'
 
 " End list of plugin
 call vundle#end()
