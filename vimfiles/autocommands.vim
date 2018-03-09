@@ -3,6 +3,9 @@ augroup vimrcEx
 
   autocmd FileType text setlocal textwidth=78
   autocmd FileType php  setlocal keywordprg=pman
+  autocmd FileType php let b:prettier_ft_default_args = {
+        \ 'parser': 'php',
+        \ }
 
   autocmd BufNewFile,BufRead *.coffee set filetype=coffee
   autocmd BufNewFile,BufRead *Cakefile set filetype=coffee
@@ -27,7 +30,7 @@ augroup vimrcEx
 
   " autocmd! CmdwinEnter * :unmap <cr>
   " autocmd! CmdwinLeave * :call MapCR()
- 
+
   function! FoldingEnter()
     if &buftype ==# 'quickfix'
       execute "normal! \<CR>"
