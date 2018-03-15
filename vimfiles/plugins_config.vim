@@ -272,6 +272,16 @@ let g:prettier#exec_cmd_async = 1
 let g:prettier#autoformat = 0
 let g:prettier#config#config_precedence = 'file-override'
 
+let g:clang_format#style_options = {
+            \ "AccessModifierOffset" : -4,
+            \ "AllowShortIfStatementsOnASingleLine" : "true",
+            \ "AlwaysBreakTemplateDeclarations" : "true",
+            \ "Standard" : "C++11",
+            \ "IndentWidth" : "2",
+            \ "UseTab" : "Never",
+            \ "BreakBeforeBraces" : "Stroustrup"}
+
+
 " let g:prettier#config#bracket_spacing = 'false'
 
 " Maybe get rid of that when I switch to regular day-to-day stuff

@@ -146,6 +146,8 @@ Plugin 'jwalton512/vim-blade'
 Plugin 'Galooshi/vim-import-js'
 Plugin 'junegunn/goyo.vim'
 Plugin 'tpope/vim-db'
+Plugin 'kana/vim-operator-user'
+Plugin 'rhysd/vim-clang-format'
 
 " End list of plugin
 call vundle#end()
