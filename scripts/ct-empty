@@ -61,7 +61,7 @@ wp eval "echo add_query_arg(array(
 				))
 			),
 		), 'http://community.creativethemes.com/wp-admin/admin-ajax.php');
-" | pbcopy
+" | pbcopy # TODO: implement platform agnostic copying by polyfilling xclip & pbcopy
 
 wp server
 
