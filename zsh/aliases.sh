@@ -112,7 +112,7 @@ alias gmf='git merge --no-ff'
 alias py='python3'
 
 # tmux
-alias t='tmux -2 new -s $(basename $(pwd))'
+alias t='tmux -2 new -s $(basename $(pwd) | tr "." -)'
 
 function tt () {
 	mkdir $1
