@@ -16,8 +16,13 @@ alias generate_secure_password='openssl passwd -1 "plaintextpassword"'
 alias generate_tags='ag -l | ctags --links=no -L-'
 
 alias wk="cd ~/Projects/full && clear && echo 'do your work, motherfucker'"
+alias blog="cd ~/Projects/gatsby-blog && clear && echo 'share, motherfucker'"
 alias wr="tmux detach; cd ~/Dropbox/Apps/Ulysses/ && t"
 alias trash="cd ~/Projects/trash && clear && echo 'try stuff'"
+
+alias chrome_insecure='open /Applications/Google\ Chrome.app/ --args --ignore-certificate-errors --disable-web-security --user-data-dir=""'
+
+
 
 
 function crx() {

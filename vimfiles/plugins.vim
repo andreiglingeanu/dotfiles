@@ -7,7 +7,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Colorschemes
 " Plugin 'sjl/badwolf'
-" Plugin 'flazz/vim-colorschemes'
+Plugin 'flazz/vim-colorschemes'
 " Plugin 'junegunn/seoul256.vim'
 " Plugin 'quanganhdo/grb256'
 " Plugin 'mgutz/vim-colors'
@@ -148,6 +148,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'tpope/vim-db'
 Plugin 'kana/vim-operator-user'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'rust-lang/rust.vim'
 
 " End list of plugin
 call vundle#end()

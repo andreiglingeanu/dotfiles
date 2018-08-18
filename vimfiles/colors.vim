@@ -19,9 +19,11 @@ if has('macunix') || system('uname -o') =~? '^darwin'
 endif
 
 if !has("gui_running")
-  colorscheme one
-  let g:one_allow_italics = 1
-  set background=dark
+  " colorscheme one
+  " let g:one_allow_italics = 1
+  " set background=dark
+
+  " colorscheme desert256
 
   " let g:solarized_termcolors=256
   " colorscheme t256
@@ -35,7 +37,7 @@ if !has("gui_running")
   " let g:badwolf_css_props_highlight = 1
   "colorscheme devbox-dark-256
   " let g:seoul256_background = 256
-  " colorscheme molokai
+  colorscheme molokai
   " let g:molokai_original=1
 else
   set background=light

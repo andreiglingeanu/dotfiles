@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+set -e
+
+if [ $# -lt 2 ]; then
+    echo "usage: $(basename $0) theme_name theme_zip" >&2
+    exit 1
+fi
+
+cd ~/Projects/full/wp_installs
+wordpress-empty-no-server $1
+cd $1/wp-content/themes
+unzip $2
+
+wp theme activate $(ls -t . | head -1)
+
+cd ../..
+wp server --port=$(get-empty-port)

@@ -9,7 +9,7 @@ alias gb='git branch'
 alias gba='git branch -a'
 alias gbd='git branch -d'
 
-alias gc='git-cz'
+alias gc='git commit'
 alias gcb='git checkout -b'
 alias gcf='git config --list'
 alias gcl='git clone --recursive'
