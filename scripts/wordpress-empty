@@ -8,17 +8,21 @@
 
 # Install fresh wordpress with unyson
 
-mkdir $1
-cd $1
+if [ ! -z "$1" ]; then
+	mkdir $1
+	cd $1
+fi
 
 echo "path: $(pwd)" > wp-cli.yml
 
-wp core download
+if [ ! -z "$1" ]; then
+	wp core download
+fi
 
 # Please note that you'll have to check that you don't repeat your db name
-mysql -u root -e "CREATE DATABASE wp_test_$1 CHARACTER SET utf8 COLLATE utf8_bin;"
+mysql -u root -e "CREATE DATABASE wp_test_$(basename $(pwd)) CHARACTER SET utf8 COLLATE utf8_bin;"
 
-wp core config --dbhost=127.0.0.1 --dbname=wp_test_$1 --dbuser=root --dbpass="" --extra-php <<PHP
+wp core config --dbhost=127.0.0.1 --dbname=wp_test_$(basename $(pwd)) --dbuser=root --dbpass="" --extra-php <<PHP
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
 PHP

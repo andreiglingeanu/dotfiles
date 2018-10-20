@@ -11,6 +11,10 @@ if [ -d "$HOME/.linuxbrew/bin" ] ; then
   PATH="$PATH:$HOME/.linuxbrew/bin"
 fi
 
+if [ -d "/usr/local/bin" ] ; then
+  PATH="$PATH:/usr/local/bin"
+fi
+
 if [ -d "$HOME/.linuxbrew/share/man" ] ; then
   export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 fi
