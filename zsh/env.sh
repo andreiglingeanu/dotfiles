@@ -15,6 +15,10 @@ if [ -d "/usr/local/bin" ] ; then
   PATH="$PATH:/usr/local/bin"
 fi
 
+if [ -d "/usr/local/smlnj/bin" ] ; then
+  PATH="$PATH:/usr/local/smlnj/bin"
+fi
+
 if [ -d "$HOME/.linuxbrew/share/man" ] ; then
   export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 fi

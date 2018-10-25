@@ -16,7 +16,7 @@ fi
 echo "path: $(pwd)" > wp-cli.yml
 
 if [ ! -z "$1" ]; then
-	wp core download
+	wp core download --version="${WP_VERSION:-latest}"
 fi
 
 # Please note that you'll have to check that you don't repeat your db name
