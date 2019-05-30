@@ -21,7 +21,9 @@ alias wr="tmux detach; cd ~/Dropbox/Apps/Ulysses/ && t"
 alias trash="cd ~/Projects/trash && clear && echo 'try stuff'"
 
 alias chrome_insecure='open /Applications/Google\ Chrome.app/ --args --ignore-certificate-errors --disable-web-security --user-data-dir=""'
+alias canary_insecure='open /Applications/Google\ Chrome\ Canary.app/ --args --ignore-certificate-errors --disable-web-security --user-data-dir=""'
 
+alias gack="git ls-files -oc --exclude-standard | ack -x"
 
 
 

@@ -1,3 +1,4 @@
+# vim:ft=gitconfig:
 [include]
 	path = ~/.gitlocalconfig
 [user]
@@ -22,7 +23,6 @@
 [push]
 	default = simple
 
-# vim:ft=gitconfig:
 [diff]
 	tool = diffmerge
 [difftool "diffmerge"]
@@ -41,4 +41,4 @@
 [gpg]
 	program = gpg
 [commit]
-	# gpgsign = true
+	gpgsign = true

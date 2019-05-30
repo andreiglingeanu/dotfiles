@@ -6,6 +6,20 @@ snippet p "php" w
 $0
 endsnippet
 
+snippet rev "php" w
+/**
+ * Note to code reviewers: This line doesn't need to be escaped.
+ * Function $1 used here escapes the value properly.
+ */
+endsnippet
+
+
+snippet time "microtime" w
+$start = microtime(true);
+$0
+fw_print("$1", microtime(true) - $start);
+endsnippet
+
 snippet fw_log "Description" w
 function fw_log() {
 	$args = func_get_args();

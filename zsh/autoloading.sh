@@ -46,10 +46,13 @@ fi
 #  NVM  #
 #########
 export NVM_DIR=~/.nvm
+
+. $HOME/.nvm/nvm.sh
+
 if [[ $platform == 'osx' ]]; then
-	group_lazy_load $HOME/.nvm/nvm.sh nvm node npm npx gulp vue yarn flow react-native node-debug node-inspector lock git-cz react-devtools web-ext importjs svgo gatsby now
+	# group_lazy_load $HOME/.nvm/nvm.sh nvm node npm npx gulp vue yarn flow react-native node-debug node-inspector lock git-cz react-devtools web-ext importjs svgo gatsby now
 else
-	. $HOME/.nvm/nvm.sh
+	# . $HOME/.nvm/nvm.sh
 fi
 
 ##########
