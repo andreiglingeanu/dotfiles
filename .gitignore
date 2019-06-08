@@ -4,3 +4,4 @@ wp-cli/packages
 lftp/*
 !lftp/rc
 
+.uuid

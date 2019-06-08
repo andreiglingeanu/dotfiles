@@ -152,6 +152,8 @@ Plugin 'leafgarland/typescript-vim'
 " Plugin 'rhysd/vim-clang-format'
 " Plugin 'rust-lang/rust.vim'
 " Plugin 'janko-m/vim-test'
+Plugin 'jaredgorski/spacecamp'
+
 
 " End list of plugin
 call vundle#end()
