@@ -37,7 +37,7 @@ if !has("gui_running")
   " let g:badwolf_css_props_highlight = 1
   "colorscheme devbox-dark-256
   " let g:seoul256_background = 256
-  colorscheme molokai
+  colorscheme spacecamp
   " let g:molokai_original=1
 else
   set background=light
