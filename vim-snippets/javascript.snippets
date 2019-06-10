@@ -11,6 +11,14 @@ if (! window.shitDoneOnce) {
 }
 endsnippet
 
+snippet add_req "Description" !b
+import ${1}Reducer from 'store/api/organization/$1/$1Reducer';
+import $1Saga from 'store/api/organization/$1/$1Saga';
+
+injectSaga('$1Saga', $1Saga);
+injectReducer('$1', $1Reducer);
+endsnippet
+
 #######################################################################
 #                               Angular                               #
 #######################################################################
