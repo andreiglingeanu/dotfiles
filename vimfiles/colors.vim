@@ -25,6 +25,11 @@ if !has("gui_running")
 
   " colorscheme desert256
 
+  let g:sierra_Pitch = 1
+  " colorscheme sierra
+  " let g:sierra_Midnight = 1
+  colorscheme sierra
+
   " let g:solarized_termcolors=256
   " colorscheme t256
   " colorscheme solarized
@@ -35,9 +40,9 @@ if !has("gui_running")
   " let g:badwolf_darkgutter = 1
   " let g:badwolf_tabline = 2
   " let g:badwolf_css_props_highlight = 1
-  "colorscheme devbox-dark-256
+  " colorscheme devbox-dark-256
   " let g:seoul256_background = 256
-  colorscheme spacecamp
+  " colorscheme spacecamp
   " let g:molokai_original=1
 else
   set background=light

@@ -154,6 +154,7 @@ Plugin 'leafgarland/typescript-vim'
 " Plugin 'janko-m/vim-test'
 Plugin 'jaredgorski/spacecamp'
 
+Plugin 'nicwest/vim-http'
 
 " End list of plugin
 call vundle#end()

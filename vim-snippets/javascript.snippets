@@ -1,3 +1,7 @@
+snippet computeLinearScale "Description" w
+range[0] +
+((range[1] - range[0]) / (domain[1] - domain[0])) * (value - domain[0])
+endsnippet
 
 ###########################################################################
 #                            TextMate Snippets                            #
@@ -17,6 +21,15 @@ import $1Saga from 'store/api/organization/$1/$1Saga';
 
 injectSaga('$1Saga', $1Saga);
 injectReducer('$1', $1Reducer);
+endsnippet
+
+snippet imp_req "Description" !b
+import { request as ${1}Request } from 'store/api/organization/$1/$1Actions';
+endsnippet
+
+snippet prop_req "Description" !b
+${1}: PropTypes.object.isRequired,
+$1Request: PropTypes.func.isRequired,
 endsnippet
 
 #######################################################################

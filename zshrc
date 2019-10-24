@@ -37,3 +37,5 @@ bindkey -e
 
 export PATH=/Users/andreiglingeanu/.local/bin/luna-studio:$PATH
 
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"

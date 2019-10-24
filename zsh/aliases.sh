@@ -20,7 +20,7 @@ alias blog="cd ~/Projects/gatsby-blog && clear && echo 'share, motherfucker'"
 alias wr="tmux detach; cd ~/Dropbox/Apps/Ulysses/ && t"
 alias trash="cd ~/Projects/trash && clear && echo 'try stuff'"
 
-alias chrome_insecure='open /Applications/Google\ Chrome.app/ --args --ignore-certificate-errors --disable-web-security --user-data-dir=""'
+alias chrome_insecure='open /Applications/Google\ Chrome.app/ --args --ignore-certificate-errors --disable-web-security --user-data-dir="" --disable-extensions-http-throttling'
 alias canary_insecure='open /Applications/Google\ Chrome\ Canary.app/ --args --ignore-certificate-errors --disable-web-security --user-data-dir=""'
 
 alias gack="git ls-files -oc --exclude-standard | ack -x"
@@ -182,7 +182,7 @@ alias work='sudo getshitdone work'
 alias play='sudo getshitdone play'
 
 # Open Source
-alias os='cd ~/Projects/open_source && echo "Start contributing, nigga."'
+alias os='cd ~/Projects/open_source && echo "Start contributing, you slacker!"'
 
 ##########
 #  tmux  #
