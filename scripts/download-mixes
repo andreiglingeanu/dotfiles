@@ -1,0 +1,3 @@
+cd ~/Music/Playlists
+# rm -rf Mixes
+scdl -c -l https://soundcloud.com/andrei-glingeanu-1/sets/nice-mixes

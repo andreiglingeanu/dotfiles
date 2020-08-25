@@ -8,6 +8,13 @@ Plugin 'gmarik/Vundle.vim'
 " Colorschemes
 " Plugin 'sjl/badwolf'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'rakr/vim-one'
+Plugin 'arzg/vim-colors-xcode'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
+
+
 " Plugin 'junegunn/seoul256.vim'
 " Plugin 'quanganhdo/grb256'
 " Plugin 'mgutz/vim-colors'
@@ -35,7 +42,6 @@ Plugin 'tpope/vim-abolish'
 " Plugin 'AndrewRadev/splitjoin.vim'
 " Plugin 'vim-ruby/vim-ruby'
 Plugin 'kien/ctrlp.vim'
-Plugin 'mattn/emmet-vim'
 " Plugin 'scrooloose/nerdcommenter'
 " Plugin 'ervandew/supertab'
 " Plugin 'godlygeek/tabular'
@@ -136,7 +142,7 @@ Plugin 'flowtype/vim-flow'
 " Plugin 'lambdalisue/vim-gista'
 Plugin 'vim-scripts/oz.vim'
 " Plugin 'jparise/vim-graphql'
-Plugin 'prettier/vim-prettier'
+Plugin 'prettier/vim-prettier', {'do': 'yarn install', 'branch': 'release/1.x' }
 " Plugin 'splattael/rufo-vim'
 " Plugin 'machakann/vim-highlightedyank'
 " Plugin 'johngrib/vim-game-code-break'
@@ -152,9 +158,12 @@ Plugin 'leafgarland/typescript-vim'
 " Plugin 'rhysd/vim-clang-format'
 " Plugin 'rust-lang/rust.vim'
 " Plugin 'janko-m/vim-test'
-Plugin 'jaredgorski/spacecamp'
 
-Plugin 'nicwest/vim-http'
+Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'chr4/nginx.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'styled-components/vim-styled-components'
+
 
 " End list of plugin
 call vundle#end()

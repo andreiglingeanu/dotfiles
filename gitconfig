@@ -36,9 +36,15 @@
 	autosetuprebase = always
 [core]
 	excludesfile = ~/.gitignore
+	autocrlf = input
 [github]
 	user = andreiglingeanu
 [gpg]
 	program = gpg
 [commit]
-	gpgsign = true
+	# gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

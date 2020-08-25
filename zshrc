@@ -39,3 +39,9 @@ export PATH=/Users/andreiglingeanu/.local/bin/luna-studio:$PATH
 
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/andreiglingeanu/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/andreiglingeanu/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/andreiglingeanu/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andreiglingeanu/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

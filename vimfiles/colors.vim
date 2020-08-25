@@ -21,14 +21,17 @@ endif
 if !has("gui_running")
   " colorscheme one
   " let g:one_allow_italics = 1
-  " set background=dark
+  set background=dark
 
   " colorscheme desert256
+  colorscheme PaperColor
+
+   " colorscheme xcodelight
 
   let g:sierra_Pitch = 1
   " colorscheme sierra
   " let g:sierra_Midnight = 1
-  colorscheme sierra
+  " colorscheme sierra
 
   " let g:solarized_termcolors=256
   " colorscheme t256

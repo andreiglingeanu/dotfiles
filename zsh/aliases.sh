@@ -2,6 +2,8 @@
 alias reload='source ~/.zshrc'
 alias ea="v $ZSHA_BASE/zsh/aliases.sh && reload" # Edit aliases
 alias edit_secrets="v ~/Dropbox/bin/login_aliases.sh && reload"
+alias bfg="java -jar /Users/andreiglingeanu/Downloads/bfg.jar"
+alias ctags="`brew --prefix`/bin/ctags"
 
 alias ec="v $ZSHA_BASE/zsh/config.sh && reload" # Edit config
 alias ev="v $ZSHA_BASE/zsh/env.sh && reload" # Edit environment specific vars

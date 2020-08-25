@@ -1,4 +1,8 @@
 tags
 gems.tags
 .rooter
+tags.lock
+tags.temp
 
+.nvmrc
+tags.files

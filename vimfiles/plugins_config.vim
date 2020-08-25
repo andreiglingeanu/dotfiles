@@ -294,3 +294,17 @@ let g:clang_format#style_options = {
 let g:vim_http_split_vertically = 1
 let g:vim_http_tempbuffer = 1
 
+let g:js_file_import_prompt_if_no_tag = 0
+let g:js_file_import_from_root = 1
+let g:js_file_import_root = getcwd() . "/src"
+
+
+if executable('rg')
+    let g:gutentags_file_list_command = 'rg --files'
+endif
+
+let g:user_emmet_settings = {
+\  'javascript' : {
+\      'extends' : 'jsx,css',
+\  },
+\}
