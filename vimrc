@@ -140,9 +140,11 @@ function! TabToggle()
     set expandtab
   endif
 
-  normal zz
+  normal zz<CR>'z
 endfunction
-nnoremap <F9> mz:execute TabToggle()<CR>'z
+
+" nnoremap <F9> mz:execute TabToggle()<CR>'z
+command! TabToggle :call TabToggle()
 
 " }}} Toggle between tabs and spaces "
 

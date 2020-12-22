@@ -40,25 +40,4 @@
 # ------------------------------------------------------------------------------
 
 
-_artisan_get_command_list () {
-    IFS=" "
-    php artisan --no-ansi | \
-        sed "1,/Available commands/d" | \
-        awk '/ [a-z]+/ { print $1 }' | \
-        sed -E 's/^[ ]+//g' | \
-        sed -E 's/[:]+/\\:/g' | \
-        sed -E 's/[ ]{2,}/\:/g'
-}
-
-_artisan () {
-    if [ -f artisan ]; then
-        local -a commands
-        IFS=$'\n'
-        commands=(`_artisan_get_command_list`)
-        _describe 'commands' commands
-    fi
-}
-
-compdef _artisan php artisan
-compdef _artisan artisan
 

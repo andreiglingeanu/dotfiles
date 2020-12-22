@@ -29,8 +29,8 @@ PHP
 
 wp core install --title="Happy debugging!" --admin_user="admin" --admin_password="123" --admin_email="email@email.com" --skip-email --url="http://0.0.0.0:3005/"
 
-ps aux | grep php | awk '{print $2}' | xargs kill -9 &>/dev/null
-wp server
+# ps aux | grep php | awk '{print $2}' | xargs kill -9 &>/dev/null
+# wp server
 
 
 

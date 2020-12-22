@@ -11,7 +11,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'rakr/vim-one'
 Plugin 'arzg/vim-colors-xcode'
-Plugin 'ludovicchabant/vim-gutentags'
+" Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 
 

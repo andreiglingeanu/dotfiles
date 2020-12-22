@@ -9,10 +9,10 @@ source $ZSHA_BASE/zsh/config.sh
 source $ZSHA_BASE/zsh/theme.zsh
 source $ZSHA_BASE/zsh/completions.sh
 
-source <(antibody init)
+# source <(antibody init)
 
-antibody bundle zsh-users/zsh-syntax-highlighting
-antibody bundle zsh-users/zsh-history-substring-search
+# antibody bundle zsh-users/zsh-syntax-highlighting
+# antibody bundle zsh-users/zsh-history-substring-search
 
 source $ZSHA_BASE/zsh/aliases.sh
 source $ZSHA_BASE/zsh/git_aliases.sh
@@ -45,3 +45,9 @@ if [ -f '/Users/andreiglingeanu/Downloads/google-cloud-sdk/path.zsh.inc' ]; then
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/andreiglingeanu/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andreiglingeanu/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+. /Users/andreiglingeanu/.google-drive-upload/google-drive-upload.binpath
