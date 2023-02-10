@@ -6,7 +6,6 @@ filetype plugin indent on
 let mapleader=" "
 
 source ~/dotfiles/vimfiles/basic_options.vim
-source ~/dotfiles/vimfiles/folding.vim
 source ~/dotfiles/vimfiles/gui.vim
 source ~/dotfiles/vimfiles/autocommands.vim
 source ~/dotfiles/vimfiles/runners.vim
@@ -14,7 +13,6 @@ source ~/dotfiles/vimfiles/colors.vim
 source ~/dotfiles/vimfiles/statusline.vim
 source ~/dotfiles/vimfiles/mappings.vim
 source ~/dotfiles/vimfiles/plugins_config.vim
-source ~/dotfiles/vimfiles/launchers.vim
 source ~/dotfiles/vimfiles/terminal.vim
 
 " Arrow Keys are unacceptable {{{ "
