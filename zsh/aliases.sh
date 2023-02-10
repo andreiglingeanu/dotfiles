@@ -27,12 +27,9 @@ alias canary_insecure='open /Applications/Google\ Chrome\ Canary.app/ --args --i
 
 alias gack="git ls-files -oc --exclude-standard | ack -x"
 
-
-
 function crx() {
   /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --pack-extension=$@ --pack-extension-key=$@/key.pem
 }
-
 
 alias ls="ls -G"
 
