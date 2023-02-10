@@ -8,7 +8,6 @@ let mapleader=" "
 source ~/dotfiles/vimfiles/basic_options.vim
 source ~/dotfiles/vimfiles/gui.vim
 source ~/dotfiles/vimfiles/autocommands.vim
-source ~/dotfiles/vimfiles/runners.vim
 source ~/dotfiles/vimfiles/colors.vim
 source ~/dotfiles/vimfiles/statusline.vim
 source ~/dotfiles/vimfiles/mappings.vim
