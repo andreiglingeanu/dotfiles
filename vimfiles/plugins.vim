@@ -13,6 +13,7 @@ Plugin 'rakr/vim-one'
 Plugin 'arzg/vim-colors-xcode'
 " Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
+Plugin 'github/copilot.vim'
 
 
 " Plugin 'junegunn/seoul256.vim'

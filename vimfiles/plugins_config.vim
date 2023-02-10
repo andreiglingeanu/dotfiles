@@ -3,6 +3,8 @@
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+  let g:UltiSnipsSnippetDirectories = ['UltiSnips', $HOME.'/dotfiles/vim-snippets']
+
 
 " noremap <Leader>m :call UltiSnips_ListSnippets()<cr>
 autocmd! FileType php :UltiSnipsAddFiletypes php
