@@ -30,41 +30,12 @@ group_lazy_load() {
     done
 }
 
-platform='unknown'
-unamestr=`uname`
-
-if [[ "$unamestr" == 'Linux' ]]; then
-	platform='linux'
-elif [[ "$unamestr" == 'FreeBSD' ]]; then
-	platform='freebsd'
-elif [[ "$unamestr" == 'Darwin' ]]; then
-	platform='osx'
-fi
-
-
 #########
 #  NVM  #
 #########
 export NVM_DIR=~/.nvm
 
 . $HOME/.nvm/nvm.sh
-
-if [[ $platform == 'osx' ]]; then
-	# group_lazy_load $HOME/.nvm/nvm.sh nvm node npm npx gulp vue yarn flow react-native node-debug node-inspector lock git-cz react-devtools web-ext importjs svgo gatsby now
-else
-	# . $HOME/.nvm/nvm.sh
-fi
-
-##########
-#  ruby  #
-##########
-if [[ $platform == 'osx' ]]; then
-	# OSX has a default ruby
-	group_lazy_load $ZSHA_BASE/autoloads/rbenv.sh rbenv ruby rails irb cap rake bundle sidekiq foreman
-else
-	. $ZSHA_BASE/autoloads/rbenv.sh
-fi
-
 
 #################
 #  php-version  #

@@ -2,12 +2,11 @@
 
 ZSHA_BASE=$HOME/dotfiles
 
-autoload -U zmv
+# autoload -U zmv
 
 source $ZSHA_BASE/zsh/env.sh
 source $ZSHA_BASE/zsh/config.sh
 source $ZSHA_BASE/zsh/theme.zsh
-source $ZSHA_BASE/zsh/completions.sh
 
 # source <(antibody init)
 
@@ -32,11 +31,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 bindkey -e
-
-export PATH=/Users/andreiglingeanu/.local/bin/luna-studio:$PATH
-
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
