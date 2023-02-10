@@ -70,11 +70,7 @@ fi
 #  php-version  #
 #################
 
-if [ -f "$HOME/.asdf/asdf.sh" ]; then
-	group_lazy_load $HOME/.asdf/asdf.sh php wp unyson-testing wordpress-drop wordpress-empty psysh valet
-else
-	group_lazy_load $ZSHA_BASE/autoloads/php-version.sh php-version php wp unyson-testing wordpress-drop wordpress-empty psysh valet
-fi
+group_lazy_load $ZSHA_BASE/autoloads/php-version.sh php-version php wp unyson-testing wordpress-drop wordpress-empty psysh valet
 
 
 
