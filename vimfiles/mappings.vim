@@ -31,8 +31,6 @@ nnoremap <leader>gf :CtrlP features<cr>
 map <Leader>qn :cnext<cr>
 map <Leader>qp :cprevious<cr>
 
-map <Leader>j :FlowJumpToDef<cr>
-
 """"""""""""""""""""""""""
 "  toggle between files  "
 """"""""""""""""""""""""""
@@ -66,20 +64,6 @@ autocmd FileType pascal inoremap <C-l> <space>:=<space>
 autocmd FileType st inoremap <C-l> <space>:=<space>
 autocmd FileType php imap <C-l> <space>-><space>
 
-""""""""""""""""""
-"  tab mappings  "
-""""""""""""""""""
-
-noremap <leader>pt :tabnew<cr>
-noremap <leader>pe :tabedit
-noremap <leader>pc :tabclose<cr>
-noremap <leader>po :tabonly<cr>
-noremap <leader>pn :tabnext<cr>
-noremap <leader>pp :tabprevious<cr>
-noremap <leader>pf :tabfirst<cr>
-noremap <leader>pl :tablast<cr>
-noremap <leader>pm :tabmove
-
 " toggle list chars
 " nnoremap <leader>l :set list!<cr>
 
@@ -87,11 +71,6 @@ noremap <leader>pm :tabmove
 inoremap <C-u> <C-c>bgUeea
 " Upcase a WORD in normal mode
 nnoremap <C-u> viwU
-
-""""""""""""""""""
-"  bang command  "
-""""""""""""""""""
-nnoremap ! :!
 
 """""""""""""""""""""""""""""""""""""""""
 "  Nice file completion in insert mode  "
@@ -103,36 +82,10 @@ inoremap <C-X><C-F> <C-O>:lcd %:p:h<CR><C-X><C-F>
 """"""""""""
 map <leader>l :w\|:!reload-chrome && open -a Google\ Chrome<cr><cr>
 
-function! OpenChangedFiles()
-  only " Close all windows, unless they're modified
-  let status = system('git status -s | grep "^ \?\(M\|A\|UU\)" | sed "s/^.\{3\}//"')
-  let filenames = split(status, "\n")
-  exec "edit " . filenames[0]
-  for filename in filenames[1:]
-    exec "sp " . filename
-  endfor
-endfunction
-command! OpenChangedFiles :call OpenChangedFiles()
-
 command! CopyFilePath :let @+ = expand("%")
 
 " command! FetchAndPut :%!curl -s $(pbpaste)<cr>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" FindConditionals COMMAND
-" Start a search for conditional branches, both implicit and explicit
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-command! FindConditionals :normal /\<if\>\|\<unless\>\|\<and\>\|\<or\>\|||\|&&<cr>
-
-""""""""""""""""""""
-"  Open Shortcode  "
-""""""""""""""""""""
-map <leader>ts :CtrlP framework-customizations/extensions/shortcodes/shortcodes/<cr>
-map <leader>te :CtrlP framework-customizations/extensions/<cr>
-
-map <leader>tt :tabedit %<cr>
 map <leader>tc :tabclose<cr>
-
-nnoremap <leader>wtf oputs "#" * 90<c-m>puts caller<c-m>puts "#" * 90<esc>
 
 
