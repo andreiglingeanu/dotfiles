@@ -4,6 +4,7 @@ set autoread
 " set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 " set modelines
 set modeline
+set mouse=
 " use visual bell instead of beeping
 set visualbell
 " show number column
