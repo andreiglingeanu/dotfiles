@@ -17,8 +17,6 @@ source ~/dotfiles/vimfiles/plugins_config.vim
 source ~/dotfiles/vimfiles/launchers.vim
 source ~/dotfiles/vimfiles/terminal.vim
 
-runtime macros/matchit.vim
-
 " Arrow Keys are unacceptable {{{ "
 noremap <Left> :echo "no!"<cr>
 noremap <Right> :echo "no!"<cr>
@@ -51,46 +49,6 @@ noremap <leader>n :call RenameFile()<cr>
 
 " }}} Rename Current FIle "
 
-" XMPFILTER Settings {{{ "
-
-let g:xmpfilter_cmd = "xmpfilter -a --no-warnings"
-map <F5> <Plug>(xmpfilter-run)
-imap <F5> <Plug>(xmpfilter-run)
-
-function! Ruby_eval_insert_hash()
-  let curline=line(".")
-  exec "normal A # => \<esc>\<F5>\0"
-  exec "normal ggVG:Tabularize /# =>\<cr>"
-  execute 'silent '.curline
-  unlet curline
-endfunction
-
-function! Ruby_eval_no_align()
-  exec "normal A # => \<esc>\<F5>\0"
-endfunction
-
-autocmd FileType ruby noremap <F6> :call Ruby_eval_insert_hash()<cr>
-autocmd FileType ruby inoremap <F6> <C-R>=Ruby_eval_insert_hash()<cr>
-autocmd FileType ruby noremap <F4> :call Ruby_eval_no_align()<cr>
-autocmd FileType ruby inoremap <F4> <C-R>=Ruby_eval_no_align()<cr>
-autocmd FileType ruby noremap <leader><leader>m <Plug>(xmpfilter-mark)
-autocmd FileType ruby noremap  <leader><leader>M 0f#Dx0
-
-" }}} XMPFILTER Settings "
-
-" Promote variable to rspec let {{{ "
-
-function! PromoteToLet()
-  :normal! dd
-  " :exec '?^\s*it\>'
-  :normal! P
-  :.s/\(\w\+\) = \(.*\)$/let(:\1) { \2 }/
-  :normal ==
-endfunction
-au FileType ruby :command! PromoteToLet :call PromoteToLet()
-au FileType ruby :noremap <leader>p :PromoteToLet<cr>
-
-" }}} Promote variable to rspec let "
 
 " Vim as hex editor {{{ "
 
@@ -148,32 +106,9 @@ command! TabToggle :call TabToggle()
 
 " }}} Toggle between tabs and spaces "
 
-" Live vimrc {{{ "
-
-" Source the vimrc file after saving it
-if has("autocmd")
-  "autocmd! bufwritepost .vimrc source $MYVIMRC
-  "autocmd bufwritepost .vimrc :AirlineRefresh
-endif
-nnoremap <leader>cc :edit $MYVIMRC<CR>
-nnoremap <leader>cs :source $MYVIMRC<CR>
-
-" }}} Live vimrc "
-
 " Ngingx {{{ "
 au BufRead,BufNewFile /etc/nginx/*,nginx.conf,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif 
 " }}} Ngingx "
-
-" Airline {{{ "
-"let g:airline_powerline_fonts = 1
-"let g:airline_theme='molokai'
-"let g:airline_theme='luna'
-"let g:airline_left_sep='['
-"let g:airline_right_sep=']'
-"let g:airline_linecolumn_prefix = '§'
-"let g:airline_paste_symbol = 'Þ'
-"let g:airline_readonly_symbol = 'Ʀ'
-" }}} Airline "
 
 " Allowed vim modeline commands {{{ "
  let g:git_modelines_allowed_items = [
@@ -195,33 +130,12 @@ au BufRead,BufNewFile /etc/nginx/*,nginx.conf,/usr/local/nginx/conf/* if &ft == 
 " }}} Allowed vim modeline commands "
 
 " Abbreviations {{{ "
-iabbrev @@@ andrei.glingeanu@gmail.com
+iabbrev eml andrei.glingeanu@gmail.com
 " }}} Abbreviations "
-" andrei.glingeanu@gmail.com
-"
-
-" Open changed files {{{ "
-" Open a split for each dirty file in git
-function! OpenChangedFiles()
-  only " Close all windows, unless they're modified
-  let status = system('git status -s | grep "^ \?\(M\|A\|UU\)" | sed "s/^.\{3\}//"')
-  let filenames = split(status, "\n")
-  exec "edit " . filenames[0]
-  for filename in filenames[1:]
-    exec "sp " . filename
-  endfor
-endfunction
-command! OpenChangedFiles :call OpenChangedFiles()
-" }}} Open changed files "
 
 " Insert time {{{ "
 command! InsertTime :normal a<c-r>=strftime('%F %H:%M:%S.0 %z')<cr>
 " }}} Insert time "
-
-" The Little Schemer {{{ "
-  autocmd FileType scheme map <leader>r :!clear && racket % -e ~/Projects/scheme/the_little_schemer/tls.ss <cr>
-  autocmd FileType scheme let b:delimitMate_quotes = ""
-" }}} The Little Schemer "
 
 " Open files directory in current file {{{ "
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -231,13 +145,5 @@ map <leader>v :view %%
 map <leader>V :vsp %%
 set splitright
 set splitbelow
-
 " }}} Open files directory in current file "
 
-" PHP Documentation {{{ "
-let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
-nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
-" }}} PHP Documentation "
-"
-nnoremap __ :split \|<Space>
-nnoremap \|\| :vsplit \|<Space>
