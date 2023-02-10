@@ -1,0 +1,4 @@
+#!/bin/bash
+
+wp-env run wordpress '/bin/bash -c "apt update; apt install -y vim ack-grep; exec /bin/bash"'
+
