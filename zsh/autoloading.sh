@@ -41,7 +41,8 @@ export NVM_DIR=~/.nvm
 #  php-version  #
 #################
 
-group_lazy_load $ZSHA_BASE/autoloads/php-version.sh php-version php wp unyson-testing wordpress-drop wordpress-empty psysh valet
+# group_lazy_load $ZSHA_BASE/autoloads/php-version.sh php-version php wp unyson-testing wordpress-drop wordpress-empty psysh valet
+source $(brew --prefix php-version)/php-version.sh && php-version 8.1
 
 
 

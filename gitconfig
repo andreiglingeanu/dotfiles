@@ -41,5 +41,3 @@
 	user = andreiglingeanu
 [gpg]
 	program = gpg
-[commit]
-	# gpgsign = true

@@ -18,8 +18,8 @@ if !has("gui_running")
 	" let g:one_allow_italics = 1
 	set background=dark
 
-	colorscheme nightfox
-	" colorscheme PaperColor
+	" colorscheme nightfox
+	colorscheme PaperColor
 
 	" colorscheme xcodelight
 

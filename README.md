@@ -10,6 +10,11 @@ ln -s dotfiles/zshrc .zshrc
 ln -s dotfiles/ruby/gemrc .gemrc
 ln -s dotfiles/ruby/irbrc .irbrc
 ln -s dotfiles/tmux.conf .tmux.conf
+
+# path for Vundle.vim -> ~/.config/nvim/bundle
+
+ln -s ~/dotfiles/vimfiles/init.lua ~/.config/nvim/init.lua
+ln -s ~/dotfiles/vimrc ~/.config/nvim/vimrc.vim
 ```
 
 VIM

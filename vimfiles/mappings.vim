@@ -1,20 +1,4 @@
-""""""""""""""""""""
-"  rails mappings  "
-""""""""""""""""""""
-map <leader>gr :topleft :split config/routes.rb<cr>
-map <leader>S <c-w>s<c-w>K:enew<cr>
-map <leader>gs :topleft :split db/schema.rb<cr>
-map <leader>gL :topleft :split config/locales<cr>
-nnoremap <leader>F  :CtrlP .<cr>
-nnoremap <leader>gv :CtrlP app/views<cr>
-nnoremap <leader>gc :CtrlP app/controllers<cr>
-nnoremap <leader>gm :CtrlP app/models<cr>
-nnoremap <leader>gh :CtrlP app/helpers<cr>
-nnoremap <leader>gl :CtrlP lib<cr>
-nnoremap <leader>gp :CtrlP public<cr>
-nnoremap <leader>gS :CtrlP app/assets/stylesheets<cr>
-nnoremap <leader>gj :CtrlP app/assets/javascripts<cr>
-nnoremap <leader>gf :CtrlP features<cr>
+nnoremap <leader>F <cmd>Telescope find_files<cr>
 
 """"""""""""""""""""""
 "  ruby test runner  "

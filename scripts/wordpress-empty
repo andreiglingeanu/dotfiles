@@ -6,7 +6,7 @@
 # and make it the way you like it.
 #
 
-# Install fresh wordpress with unyson
+# Install fresh wordpress
 
 if [ ! -z "$1" ]; then
 	mkdir $1
