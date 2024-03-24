@@ -92,3 +92,6 @@ set nrformats-=octal
 " Set the tag file search order
 set tags=./tags;
 
+" https://stackoverflow.com/a/8125118/3220977
+set cino=N-s
+

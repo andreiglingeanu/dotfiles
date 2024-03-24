@@ -3,6 +3,6 @@ vim.cmd.source(vimrc)
 
 
 -- require("autoclose").setup()
-require("nvim-autopairs").setup {}
+-- require("nvim-autopairs").setup {}
 
 
